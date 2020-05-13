@@ -2,6 +2,8 @@ const fs = require('fs').promises;
 const minify = require('html-minifier').minify;
 const puppeteer = require('puppeteer');
 
+const server = require('./server.js');
+
 function minifyHtml(html) {
   return minify(html, {
     collapseInlineTagWhitespace: true,
@@ -16,6 +18,7 @@ function minifyHtml(html) {
 async function main() {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  await server.start(9001);
   await page.goto('http://localhost:9001/');
   await page.waitForSelector('.passing');
   const html = await page.evaluate(() => {
@@ -24,6 +27,7 @@ async function main() {
   });
   await fs.writeFile('dist/index.html', minifyHtml(html));
   await browser.close();
+  await server.stop();
 }
 
 main();
