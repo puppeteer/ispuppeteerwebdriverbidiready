@@ -1,6 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "fetch": "curl https://hg.mozilla.org/mozilla-central/raw-file/tip/remote/puppeteer-expected.json > expectations.json"
+    "fetch": "curl https://hg.mozilla.org/mozilla-central/raw-file/tip/remote/puppeteer-expected.json > expectations.json",
+    "build": "npm start & mkdir -p dist && node build.js && kill $!",
+    "start": "http-server --port 9001 ."
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "http-server": "^0.12.3",
+    "puppeteer": "^3.0.4"
   }
 }
