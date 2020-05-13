@@ -15,9 +15,9 @@ const server = http.createServer((req, res) => {
       res.end(fs.readFileSync('./main.mjs'));
       break;
     }
-    case '/expectations.json': {
+    case '/data.json': {
       res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
-      res.end(fs.readFileSync('./expectations.json'));
+      res.end(fs.readFileSync('./data.json'));
       break;
     }
   }

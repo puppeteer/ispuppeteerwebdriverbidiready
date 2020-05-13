@@ -23,19 +23,16 @@ function format({ passing, total }) {
 }
 
 async function main() {
-  const response = await fetch('./expectations.json');
-  const expectations = await response.json();
-  const counts = {
-    passing: 0,
-    total: 0,
-  };
-  for (const [name, expectation] of Object.entries(expectations)) {
-    counts.total++;
-    if (expectation.length === 1 && expectation[0] === 'PASS') {
-      counts.passing++;
-    }
+  const response = await fetch('./data.json');
+  const entries = await response.json();
+  const buffer = [];
+  for (const entry of entries) {
+    const { date, counts } = entry;
+    const html = `${ new Date(date).toUTCString() }: ${ format(counts) }`;
+    buffer.push(html);
   }
-  document.querySelector('#output').innerHTML = format(counts);
+  const html = buffer.join('<br>');
+  document.querySelector('#output').innerHTML = html;
 }
 
 main();

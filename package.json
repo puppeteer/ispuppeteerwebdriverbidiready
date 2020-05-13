@@ -1,13 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "fetch": "curl https://hg.mozilla.org/mozilla-central/raw-file/tip/remote/puppeteer-expected.json > expectations.json",
+    "fetch": "node fetch.js",
     "build": "npm run fetch && mkdir -p dist && node build.js",
     "start": "http-server --port 9001 ."
   },
   "devDependencies": {
     "html-minifier": "^4.0.0",
     "http-server": "^0.12.3",
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^3.0.4",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
   }
 }
