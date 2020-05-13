@@ -1,6 +1,21 @@
 const fs = require('fs').promises;
 const fetch = require('node-fetch');
-const parseExpectations = require('./parse-expectations.js');
+
+async function parseExpectations(url) {
+  const response = await fetch(url);
+  const expectations = await response.json();
+  const counts = {
+    passing: 0,
+    total: 0,
+  };
+  for (const [name, expectation] of Object.entries(expectations)) {
+    counts.total++;
+    if (expectation.length === 1 && expectation[0] === 'PASS') {
+      counts.passing++;
+    }
+  }
+  return counts;
+}
 
 async function getLogEntries() {
   const response = await fetch('https://hg.mozilla.org/mozilla-central/json-log/tip/remote/puppeteer-expected.json');
