@@ -21,10 +21,10 @@ async function main() {
   await server.start(9001);
   await page.goto('http://localhost:9001/');
   await page.waitForSelector('.passing');
-  const html = await page.evaluate(() => {
-    document.scripts[0].remove();
-    return `<!DOCTYPE html>${ document.documentElement.outerHTML }`;
+  await page.evaluate(() => {
+    document.querySelectorAll('scripts').forEach(script => script.remove());
   });
+  const html = await page.content();
   await fs.writeFile('dist/index.html', minifyHtml(html));
   await browser.close();
   await server.stop();
