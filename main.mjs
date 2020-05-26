@@ -1,38 +1,37 @@
-const nf = new Intl.NumberFormat('en');
-function formatNumber(number) {
-  return nf.format(number);
-}
+function renderChart(chartData) {
+  google.charts.load('current', { packages: ['corechart'] });
+  google.charts.setOnLoadCallback(drawChart);
 
-const pf = new Intl.NumberFormat('en', {
-  style: 'unit',
-  unit: 'percent',
-  maximumFractionDigits: 0,
-});
-function formatPercentage(number) {
-  return pf.format(number * 100);
-}
+  function drawChart() {
+    const data = google.visualization.arrayToDataTable(chartData);
 
-function format({ passing, total }) {
-  return `
-    <span class="passing">${ formatNumber(passing) }</span>
-    out of
-    <span class="total">${ formatNumber(total) }</span>
-    tests are passing.
-    (${ formatPercentage(passing / total) })
-  `;
+    const options = {
+      title: 'is Puppeteer Firefox ready?',
+      vAxis: { minValue: 0 },
+      isStacked: true,
+    };
+
+    const chart = new google.visualization.AreaChart(document.querySelector('#chart'));
+    google.visualization.events.addListener(chart, 'ready', () => {
+      document.documentElement.classList.add('has-chart');
+    });
+    chart.draw(data, options);
+  }
 }
 
 async function main() {
   const response = await fetch('./data.json');
   const entries = await response.json();
-  const buffer = [];
+  const chartData = [
+    ['date', 'passing tests', 'failing tests', 'skipping tests'],
+  ];
   for (const entry of entries) {
     const { date, counts } = entry;
-    const html = `${ new Date(date).toUTCString() }: ${ format(counts) }`;
-    buffer.push(html);
+    chartData.push(
+      [new Date(date), counts.passing, counts.failing, counts.skipping]
+    );
   }
-  const html = buffer.join('<br>');
-  document.querySelector('#output').innerHTML = html;
+  renderChart(chartData);
 }
 
 main();
