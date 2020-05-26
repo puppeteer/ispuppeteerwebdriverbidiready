@@ -6,7 +6,7 @@ function renderChart(chartData) {
     const data = google.visualization.arrayToDataTable(chartData);
 
     const options = {
-      title: 'is Puppeteer Firefox ready?',
+      curveType: 'function',
       vAxis: { minValue: 0 },
       isStacked: true,
     };
