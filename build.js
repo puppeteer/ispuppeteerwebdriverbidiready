@@ -3,6 +3,7 @@ const minify = require('html-minifier').minify;
 const puppeteer = require('puppeteer');
 
 const server = require('./server.js');
+const { generateChartSVG } = require('./chart.js');
 
 function minifyHtml(html) {
   return minify(html, {
@@ -21,6 +22,10 @@ async function main() {
   await server.start(9001);
   await page.goto('http://localhost:9001/');
   await page.waitForSelector('.passing');
+
+  const chartContent = await generateChartSVG();
+  await page.evaluate((content) => document.querySelector('#chart').innerHTML = content, chartContent);
+
   await page.evaluate(() => {
     document.querySelectorAll('scripts').forEach(script => script.remove());
   });

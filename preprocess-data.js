@@ -6,12 +6,24 @@ async function parseExpectations(url) {
   const expectations = await response.json();
   const counts = {
     passing: 0,
+    failing: 0,
+    skipping: 0,
     total: 0,
   };
   for (const [name, expectation] of Object.entries(expectations)) {
     counts.total++;
-    if (expectation.length === 1 && expectation[0] === 'PASS') {
-      counts.passing++;
+    if (expectation.length === 1) {
+      switch (expectation[0]) {
+        case 'PASS':
+          counts.passing++;
+          break;
+        case 'FAIL':
+          counts.failing++;
+          break;
+        case 'SKIP':
+          counts.skipping++;
+          break;
+      }
     }
   }
   return counts;
