@@ -1,3 +1,21 @@
+const nf = new Intl.NumberFormat('en');
+function formatNumber(number) {
+  return nf.format(number);
+}
+
+const pf = new Intl.NumberFormat('en', {
+  style: 'unit',
+  unit: 'percent',
+  maximumFractionDigits: 0,
+});
+function formatPercentage(number) {
+  return pf.format(number * 100);
+}
+
+function format({ passing, total }) {
+  return `${ formatNumber(passing) } out of ${ formatNumber(total) } tests are passing. (${ formatPercentage(passing / total) })`;
+}
+
 function renderChart(chartData) {
   google.charts.load('current', { packages: ['corechart'] });
   google.charts.setOnLoadCallback(drawChart);
@@ -30,6 +48,7 @@ async function main() {
     chartData.push(
       [new Date(date), counts.passing, counts.failing, counts.skipping]
     );
+    console.log(`${ new Date(date).toUTCString() }: ${ format(counts) }`);
   }
   renderChart(chartData);
 }
