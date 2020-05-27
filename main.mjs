@@ -26,7 +26,7 @@ function renderChart(chartData) {
     const options = {
       curveType: 'function',
       vAxis: { minValue: 0 },
-      hAxis: { format: 'd/M/yy' },
+      hAxis: { format: 'MMM d' },
       isStacked: true,
     };
 
