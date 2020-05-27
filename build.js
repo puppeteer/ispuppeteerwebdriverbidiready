@@ -22,7 +22,10 @@ async function main() {
   await page.goto('http://localhost:9001/');
   await page.waitForSelector('.has-chart');
   await page.evaluate(() => {
-    document.querySelectorAll('scripts').forEach(script => script.remove());
+    const scripts = document.querySelectorAll('script');
+    for (const script of scripts) {
+      script.remove();
+    }
   });
   const html = await page.content();
   await fs.writeFile('dist/index.html', minifyHtml(html));
