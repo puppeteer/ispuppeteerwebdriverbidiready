@@ -2,7 +2,7 @@ name: Build and deploy
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: "20 04 * * *"
 jobs:
@@ -24,6 +24,6 @@ jobs:
         with:
           SSH: true
           SINGLE_COMMIT: true
-          BASE_BRANCH: master
+          BASE_BRANCH: main
           BRANCH: gh-pages
           FOLDER: dist
