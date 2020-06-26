@@ -24,6 +24,9 @@ async function parseExpectations(url) {
           counts.skipping++;
           break;
       }
+    } else {
+      // tests with multiple statuses are counted as failures
+      counts.failing++;
     }
   }
   return counts;
