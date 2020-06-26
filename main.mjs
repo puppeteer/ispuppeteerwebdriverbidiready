@@ -28,6 +28,7 @@ function renderChart(chartData) {
       vAxis: { minValue: 0 },
       hAxis: { format: 'MMM d' },
       isStacked: true,
+      colors: ['#3366cc', '#dc3912', '#ff9900', '#aaaaaa'],
     };
 
     const chart = new google.visualization.AreaChart(document.querySelector('#chart'));
@@ -42,12 +43,12 @@ async function main() {
   const response = await fetch('./data.json');
   const entries = await response.json();
   const chartData = [
-    ['date', 'passing tests', 'failing tests', 'skipping tests'],
+    ['date', 'tests passed', 'tests failed', 'tests skipped', 'out of scope'],
   ];
   for (const entry of entries) {
     const { date, counts } = entry;
     chartData.push(
-      [new Date(date), counts.passing, counts.failing, counts.skipping]
+      [new Date(date), counts.passing, counts.failing, counts.skipping, counts.unsupported]
     );
     console.log(`${ new Date(date).toUTCString() }: ${ format(counts) }`);
   }
