@@ -28,7 +28,7 @@ function renderChart(chartData) {
       vAxis: { minValue: 0 },
       hAxis: { format: 'MMM d' },
       isStacked: true,
-      colors:['#3366cc', '#dc3912', '#ff9900', '#aaaaaa'],
+      colors: ['#3366cc', '#dc3912', '#ff9900', '#aaaaaa'],
     };
 
     const chart = new google.visualization.AreaChart(document.querySelector('#chart'));
