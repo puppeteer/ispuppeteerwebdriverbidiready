@@ -29,6 +29,9 @@ async function parseExpectations(url) {
       counts.failing++;
     }
   }
+
+  counts.unsupported = counts.total - (counts.passing + counts.failing + counts.skipping);
+
   return counts;
 }
 
