@@ -1,11 +1,11 @@
 const fs = require('fs').promises;
 const fetch = require('node-fetch');
 
-const baseURL = "https://hg.mozilla.org/mozilla-central/";
+const baseURL = 'https://hg.mozilla.org/mozilla-central/';
 
 const filePaths = [
-  "remote/test/puppeteer-expected.json",
-  "remote/puppeteer-expected.json",
+  'remote/test/puppeteer-expected.json',
+  'remote/puppeteer-expected.json',
 ];
 
 async function parseExpectations(url) {
