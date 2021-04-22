@@ -1,6 +1,13 @@
 const fs = require('fs').promises;
 const fetch = require('node-fetch');
 
+const baseURL = "https://hg.mozilla.org/mozilla-central/";
+
+const filePaths = [
+  "remote/test/puppeteer-expected.json",
+  "remote/puppeteer-expected.json",
+];
+
 async function parseExpectations(url) {
   const response = await fetch(url);
   const expectations = await response.json();
@@ -35,22 +42,26 @@ async function parseExpectations(url) {
   return counts;
 }
 
-async function getLogEntries() {
-  const response = await fetch('https://hg.mozilla.org/mozilla-central/json-log/tip/remote/puppeteer-expected.json');
+async function getLogEntries(path) {
+  const response = await fetch(`${baseURL}/json-log/tip/${path}`);
   const data = await response.json();
   return data.entries;
 }
 
 async function main() {
   const data = [];
-  const entries = await getLogEntries();
-  for (const entry of entries) {
-    const date = entry.date[0] * 1000;
-    const revision = entry.node;
-    const url = `https://hg.mozilla.org/mozilla-central/raw-file/${revision}/remote/puppeteer-expected.json`;
-    const counts = await parseExpectations(url);
-    data.push({ date, counts });
-  }
+
+  for (const filePath of filePaths) {
+    const entries = await getLogEntries(filePath);
+    for (const entry of entries) {
+      const date = entry.date[0] * 1000;
+      const revision = entry.node;
+      const url = `${baseURL}/raw-file/${revision}/${filePath}`;
+      const counts = await parseExpectations(url);
+      data.push({ date, counts });
+    }
+  };
+
   data.sort((a, b) => a.date - b.date);
   fs.writeFile('data.json', JSON.stringify(data, null, 2));
   console.log(data);
