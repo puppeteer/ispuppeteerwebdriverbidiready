@@ -53,6 +53,10 @@ async function main() {
     console.log(`${ new Date(date).toUTCString() }: ${ format(counts) }`);
   }
   renderChart(chartData);
+
+  const elTime = document.querySelector('time');
+  const date = new Date().toISOString().slice(0, 'YYYY-MM-DD'.length);
+  elTime.textContent = date;
 }
 
 main();
