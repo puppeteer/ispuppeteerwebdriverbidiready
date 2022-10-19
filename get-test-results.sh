@@ -4,7 +4,7 @@ CWD=$(pwd)
 
 cd $(mktemp -d)
 
-git clone --depth 10 git@github.com:puppeteer/puppeteer.git
+git clone --depth 1 https://github.com/puppeteer/puppeteer.git
 cd puppeteer
 git pull
 git checkout save-test-stats
