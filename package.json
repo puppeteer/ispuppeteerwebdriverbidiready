@@ -8,8 +8,6 @@
   "devDependencies": {
     "html-minifier": "^4.0.0",
     "http-server": "^0.12.3",
-    "node-fetch": "^2.6.0",
-    "puppeteer": "^3.0.4",
-    "whatwg-fetch": "^3.0.0"
+    "puppeteer": "^3.0.4"
   }
 }
