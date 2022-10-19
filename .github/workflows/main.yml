@@ -18,6 +18,7 @@ jobs:
           ./get-test-results.sh
           git config --global user.name "GitHub Actions"
           git config --global user.email "username@users.noreply.github.com"
+          git add data --all
           git commit -a -m "Test results obtains via GitHub Actions"
           git push
       - name: Build
