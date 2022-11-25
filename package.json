@@ -2,12 +2,10 @@
   "private": true,
   "scripts": {
     "data": "node preprocess-data.js",
-    "build": "npm run data && mkdir -p dist && node build.js",
+    "build": "npm run data && rm -rf dist && mkdir -p dist && cp data.json dist/ && cp index.html dist/ && cp main.mjs dist/",
     "start": "http-server --port 9001 ."
   },
   "devDependencies": {
-    "html-minifier": "^4.0.0",
-    "http-server": "^0.12.3",
-    "puppeteer": "^19.3.0"
+    "http-server": "^0.12.3"
   }
 }
