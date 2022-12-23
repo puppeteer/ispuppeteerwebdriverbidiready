@@ -8,8 +8,8 @@ async function main() {
   const page = await browser.newPage();
   await server.start(9001);
   await page.setViewport({
-    width: 4096,
-    height: 3072,
+    width: 3840,
+    height: 2163,
   });
   await page.goto('http://localhost:9001/');
   await page.waitForSelector('.has-chart');
