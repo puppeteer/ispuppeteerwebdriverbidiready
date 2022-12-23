@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Fetch data
         run: |
           ./get-test-results.sh
@@ -26,14 +26,14 @@ jobs:
           npm install
           npm run build
       - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.4.1
+        uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          SSH: true
-          SINGLE_COMMIT: true
-          BASE_BRANCH: main
-          BRANCH: gh-pages
-          FOLDER: dist
+          ssh-key: true
+          single-commit: true
+          base-branch: main
+          branch: gh-pages
+          folder: dist
