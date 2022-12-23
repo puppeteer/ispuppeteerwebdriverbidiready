@@ -24,10 +24,9 @@ function renderChart(chartData) {
     const data = google.visualization.arrayToDataTable(chartData);
 
     const options = {
-      curveType: 'function',
       vAxis: { minValue: 0 },
       hAxis: { format: 'MMM d' },
-      isStacked: true,
+      tooltip: {isHtml: true},
       colors: ['#3366cc', '#dc3912', '#ff9900', '#aaaaaa'],
     };
 
@@ -39,18 +38,29 @@ function renderChart(chartData) {
   }
 }
 
+function buildTooltip(label, counts) {
+  return `
+    <div style="padding: 10px; font-size: 1rem;">
+      <div>Total: ${counts.total}</div>
+      <div>Passing: ${counts.passing}</div>
+      <div>Skipping: ${counts.skipping}</div>
+      <div>Failing: ${counts.failing}</div>
+    </div>
+  `;
+}
+
 async function main() {
   const response = await fetch('./data.json');
   const entries = await response.json();
   const chartData = [
-    ['date', 'tests passed', 'tests failed', 'tests skipped', 'out of scope'],
+    ['date', 'tests passed (Firefox)', {type: 'string', role: 'tooltip', 'p': {'html': true}}, 'tests passed (Chrome)', {type: 'string', role: 'tooltip', 'p': {'html': true}}],
   ];
   for (const entry of entries) {
-    const { date, counts } = entry;
+    const { date, firefoxCounts, chromeCounts } = entry;
     chartData.push(
-      [new Date(date), counts.passing, counts.failing, counts.skipping, counts.unsupported]
+      [new Date(date), firefoxCounts.passing, buildTooltip('Firefox', firefoxCounts), chromeCounts.passing, buildTooltip('Chrome', chromeCounts)]
     );
-    console.log(`${ new Date(date).toUTCString() }: ${ format(counts) }`);
+    console.log(`${ new Date(date).toUTCString() }: ${ format(firefoxCounts) } : ${ format(chromeCounts) }`);
   }
   renderChart(chartData);
 
