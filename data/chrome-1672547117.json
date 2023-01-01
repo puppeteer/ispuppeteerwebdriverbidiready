@@ -1,0 +1,3260 @@
+{
+  "stats": {
+    "suites": 86,
+    "tests": 169,
+    "passes": 1,
+    "pending": 167,
+    "failures": 40,
+    "start": "2023-01-01T04:30:10.828Z",
+    "end": "2023-01-01T04:46:26.952Z",
+    "duration": 976124
+  },
+  "tests": [
+    {
+      "title": "should work",
+      "fullTitle": "Accessibility should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should report uninteresting nodes",
+      "fullTitle": "Accessibility should report uninteresting nodes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "get snapshots while the tree is re-calculated",
+      "fullTitle": "Accessibility get snapshots while the tree is re-calculated",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "roledescription",
+      "fullTitle": "Accessibility roledescription",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "orientation",
+      "fullTitle": "Accessibility orientation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "autocomplete",
+      "fullTitle": "Accessibility autocomplete",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "multiselectable",
+      "fullTitle": "Accessibility multiselectable",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "keyshortcuts",
+      "fullTitle": "Accessibility keyshortcuts",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should not report text nodes inside controls",
+      "fullTitle": "Accessibility filtering children of leaf nodes should not report text nodes inside controls",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rich text editable fields should have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes rich text editable fields should have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rich text editable fields with role should have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes rich text editable fields with role should have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "non editable textbox with role and tabIndex and label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes non editable textbox with role and tabIndex and label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "checkbox with and tabIndex and label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes checkbox with and tabIndex and label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "checkbox without label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes checkbox without label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "plain text field with role should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes plaintext contenteditable plain text field with role should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work a button",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work a button",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work an input",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work an input",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work a menu",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work a menu",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return null when the element is no longer in DOM",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should return null when the element is no longer in DOM",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the interestingOnly option",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should support the interestingOnly option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button",
+      "fullTitle": "AriaQueryHandler parseAriaSelector should find button",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button by role",
+      "fullTitle": "AriaQueryHandler queryOne should find button by role",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button by name and role",
+      "fullTitle": "AriaQueryHandler queryOne should find button by name and role",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find first matching element",
+      "fullTitle": "AriaQueryHandler queryOne should find first matching element",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name",
+      "fullTitle": "AriaQueryHandler queryOne should find by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name",
+      "fullTitle": "AriaQueryHandler queryOne should find by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find menu by name",
+      "fullTitle": "AriaQueryHandler queryAll should find menu by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "$$eval should handle many elements",
+      "fullTitle": "AriaQueryHandler queryAllArray $$eval should handle many elements",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should immediately resolve promise if node exists",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should immediately resolve promise if node exists",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work for ElementHandle.waitForSelector",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work for ElementHandle.waitForSelector",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should persist query handler bindings across reloads",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should persist query handler bindings across reloads",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should persist query handler bindings across navigations",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should persist query handler bindings across navigations",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work independently of `exposeFunction`",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work independently of `exposeFunction`",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with removed MutationObserver",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work with removed MutationObserver",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should resolve promise when node is added",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should resolve promise when node is added",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work when node is added through innerHTML",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work when node is added through innerHTML",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Page.waitForSelector is shortcut for main frame",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) Page.waitForSelector is shortcut for main frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run in specified frame",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should run in specified frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when frame is detached",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should throw when frame is detached",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should survive cross-process navigation",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should survive cross-process navigation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should wait for visible",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should wait for visible",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should wait for visible recursively",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should wait for visible recursively",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for visibility: hidden",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for visibility: hidden",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for display: none",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for display: none",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for removal",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for removal",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return null if waiting to hide non-existing element",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should return null if waiting to hide non-existing element",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect timeout",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should respect timeout",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have an error message specifically for awaiting an element to be hidden",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should have an error message specifically for awaiting an element to be hidden",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respond to node attribute mutation",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should respond to node attribute mutation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return the element handle",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should return the element handle",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have correct stack trace for timeout",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should have correct stack trace for timeout",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name \"foo\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by name \"foo\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name \"bar\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by name \"bar\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find treeitem by name",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find treeitem by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by role \"button\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by role \"button\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by role \"heading\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by role \"heading\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find both ignored and unignored",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find both ignored and unignored",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "WebDriver BiDi Connection should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/bidi/Connection.spec.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    },
+    {
+      "title": "should be able to connect using browserUrl, with and without trailing slash",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should be able to connect using browserUrl, with and without trailing slash",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when using both browserWSEndpoint and browserURL",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should throw when using both browserWSEndpoint and browserURL",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when trying to connect to non-existing browser",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should throw when trying to connect to non-existing browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the pipe option",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should support the pipe option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the pipe argument",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should support the pipe argument",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should fire \"disconnected\" when closing with pipe",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should fire \"disconnected\" when closing with pipe",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on: adds an event listener that is fired when the event is emitted",
+      "fullTitle": "EventEmitter on on: adds an event listener that is fired when the event is emitted",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on sends the event data to the handler",
+      "fullTitle": "EventEmitter on on sends the event data to the handler",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on: supports chaining",
+      "fullTitle": "EventEmitter on on: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener: adds an event listener that is fired when the event is emitted",
+      "fullTitle": "EventEmitter on addListener: adds an event listener that is fired when the event is emitted",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener sends the event data to the handler",
+      "fullTitle": "EventEmitter on addListener sends the event data to the handler",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener: supports chaining",
+      "fullTitle": "EventEmitter on addListener: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "off: removes the listener so it is no longer called",
+      "fullTitle": "EventEmitter off off: removes the listener so it is no longer called",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "off: supports chaining",
+      "fullTitle": "EventEmitter off off: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removeListener: removes the listener so it is no longer called",
+      "fullTitle": "EventEmitter off removeListener: removes the listener so it is no longer called",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removeListener: supports chaining",
+      "fullTitle": "EventEmitter off removeListener: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "only calls the listener once and then removes it",
+      "fullTitle": "EventEmitter once only calls the listener once and then removes it",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "supports chaining",
+      "fullTitle": "EventEmitter once supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls all the listeners for an event",
+      "fullTitle": "EventEmitter emit calls all the listeners for an event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "passes data through to the listener",
+      "fullTitle": "EventEmitter emit passes data through to the listener",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns true if the event has listeners",
+      "fullTitle": "EventEmitter emit returns true if the event has listeners",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns false if the event has listeners",
+      "fullTitle": "EventEmitter emit returns false if the event has listeners",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the number of listeners for the given event",
+      "fullTitle": "EventEmitter listenerCount returns the number of listeners for the given event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes every listener from all events by default",
+      "fullTitle": "EventEmitter removeAllListeners removes every listener from all events by default",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the emitter for chaining",
+      "fullTitle": "EventEmitter removeAllListeners returns the emitter for chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "can filter to remove only listeners for a given event name",
+      "fullTitle": "EventEmitter removeAllListeners can filter to remove only listeners for a given event name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "dumpio option should work with pipe option",
+      "fullTitle": "Fixtures dumpio option should work with pipe option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should dump browser process stderr",
+      "fullTitle": "Fixtures should dump browser process stderr",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should close the browser when the node process closes",
+      "fullTitle": "Fixtures should close the browser when the node process closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "background_page target type should be available",
+      "fullTitle": "headful tests HEADFUL background_page target type should be available",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "service_worker target type should be available",
+      "fullTitle": "headful tests HEADFUL service_worker target type should be available",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "target.page() should return a background_page",
+      "fullTitle": "headful tests HEADFUL target.page() should return a background_page",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "target.page() should return a DevTools page if custom isPageTarget is provided",
+      "fullTitle": "headful tests HEADFUL target.page() should return a DevTools page if custom isPageTarget is provided",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have default url when launching browser",
+      "fullTitle": "headful tests HEADFUL should have default url when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "headless should be able to read cookies written by headful",
+      "fullTitle": "headful tests HEADFUL headless should be able to read cookies written by headful",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "OOPIF: should report google.com frame",
+      "fullTitle": "headful tests HEADFUL OOPIF: should report google.com frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "OOPIF: should expose events within OOPIFs",
+      "fullTitle": "headful tests HEADFUL OOPIF: should expose events within OOPIFs",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should close browser with beforeunload page",
+      "fullTitle": "headful tests HEADFUL should close browser with beforeunload page",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should open devtools when \"devtools: true\" option is given",
+      "fullTitle": "headful tests HEADFUL should open devtools when \"devtools: true\" option is given",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "headful tests Page.bringToFront should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run in parallel in multiple pages",
+      "fullTitle": "headful tests Page.screenshot should run in parallel in multiple pages",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should download and extract chrome linux binary",
+      "fullTitle": "Launcher specs Puppeteer BrowserFetcher should download and extract chrome linux binary",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should download and extract firefox linux binary",
+      "fullTitle": "Launcher specs Puppeteer BrowserFetcher should download and extract firefox linux binary",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject navigation when browser closes",
+      "fullTitle": "Launcher specs Puppeteer Browser.disconnect should reject navigation when browser closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject waitForSelector when browser closes",
+      "fullTitle": "Launcher specs Puppeteer Browser.disconnect should reject waitForSelector when browser closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should terminate network waiters",
+      "fullTitle": "Launcher specs Puppeteer Browser.close should terminate network waiters",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "can launch and close the browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch can launch and close the browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "duration": 25023,
+      "currentRetry": 2,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "should reject all promises when browser is closed",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should reject all promises when browser is closed",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject if executable path is invalid",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should reject if executable path is invalid",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "tmp profile should be cleaned up",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch tmp profile should be cleaned up",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option restores preferences",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option restores preferences",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir argument",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir argument",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir argument with non-existent dir",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir argument with non-existent dir",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option should restore state",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option should restore state",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option should restore cookies",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option should restore cookies",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return the default arguments",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should return the default arguments",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should report the correct product",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should report the correct product",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with no default arguments",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should work with no default arguments",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should filter out ignored default arguments in Chrome",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should filter out ignored default arguments in Chrome",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should filter out ignored default argument in Firefox",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should filter out ignored default argument in Firefox",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have default URL when launching browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should have default URL when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have custom URL when launching browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should have custom URL when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should pass the timeout parameter to browser.waitForTarget",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should pass the timeout parameter to browser.waitForTarget",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with timeout = 0",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should work with timeout = 0",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the default viewport",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should set the default viewport",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should disable the default viewport",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should disable the default viewport",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should take fullPage screenshots when defaultViewport is null",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should take fullPage screenshots when defaultViewport is null",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the debugging port",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should set the debugging port",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should not allow setting debuggingPort and pipe",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should not allow setting debuggingPort and pipe",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should launch Chrome properly with --no-startup-window and waitForInitialPage=false",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should launch Chrome properly with --no-startup-window and waitForInitialPage=false",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to launch Chrome",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should be able to launch Chrome",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to launch Firefox",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should be able to launch Firefox",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect multiple times to the same browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect multiple times to the same browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to close remote browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to close remote browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect to a browser with no page targets",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect to a browser with no page targets",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support ignoreHTTPSErrors option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support ignoreHTTPSErrors option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support targetFilter option in puppeteer.launch",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support targetFilter option in puppeteer.launch",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support targetFilter option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support targetFilter option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to reconnect to a disconnected browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to reconnect to a disconnected browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect to the same page simultaneously",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect to the same page simultaneously",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to reconnect",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to reconnect",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns executablePath for channel",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath returns executablePath for channel",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "its value is used",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when executable path is configured its value is used",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns /usr/bin/chromium-browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable exists returns /usr/bin/chromium-browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "its value is used",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable exists and the executable path is configured its value is used",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not return /usr/bin/chromium-browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable does not exist does not return /usr/bin/chromium-browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "Launcher specs Browser target events should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
+      "fullTitle": "Launcher specs Browser.Events.disconnected should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should process extra info on multiple redirects",
+      "fullTitle": "NetworkManager should process extra info on multiple redirects",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle \"double pause\" (crbug.com/1196004) Fetch.requestPaused events for the same Network.requestWillBeSent event",
+      "fullTitle": "NetworkManager should handle \"double pause\" (crbug.com/1196004) Fetch.requestPaused events for the same Network.requestWillBeSent event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle Network.responseReceivedExtraInfo event after Network.responseReceived event (github.com/puppeteer/puppeteer/issues/8234)",
+      "fullTitle": "NetworkManager should handle Network.responseReceivedExtraInfo event after Network.responseReceived event (github.com/puppeteer/puppeteer/issues/8234)",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should resolve the response once the late responseReceivedExtraInfo event arrives",
+      "fullTitle": "NetworkManager should resolve the response once the late responseReceivedExtraInfo event arrives",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send responses for iframe that don't receive loadingFinished event",
+      "fullTitle": "NetworkManager should send responses for iframe that don't receive loadingFinished event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send responses for iframe that don't receive loadingFinished event",
+      "fullTitle": "NetworkManager should send responses for iframe that don't receive loadingFinished event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured",
+      "fullTitle": "request proxy should proxy requests when configured",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list",
+      "fullTitle": "request proxy should respect proxy bypass list",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured at browser level",
+      "fullTitle": "request proxy in incognito browser context should proxy requests when configured at browser level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list when configured at browser level",
+      "fullTitle": "request proxy in incognito browser context should respect proxy bypass list when configured at browser level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured at context level",
+      "fullTitle": "request proxy in incognito browser context should proxy requests when configured at context level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list when configured at context level",
+      "fullTitle": "request proxy in incognito browser context should respect proxy bypass list when configured at context level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should output a trace",
+      "fullTitle": "Tracing should output a trace",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run with custom categories if provided",
+      "fullTitle": "Tracing should run with custom categories if provided",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run with default categories",
+      "fullTitle": "Tracing should run with default categories",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw if tracing on two pages",
+      "fullTitle": "Tracing should throw if tracing on two pages",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return a buffer",
+      "fullTitle": "Tracing should return a buffer",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work without options",
+      "fullTitle": "Tracing should work without options",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return undefined in case of Buffer error",
+      "fullTitle": "Tracing should return undefined in case of Buffer error",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support a buffer without a path",
+      "fullTitle": "Tracing should support a buffer without a path",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should properly fail if readProtocolStream errors out",
+      "fullTitle": "Tracing should properly fail if readProtocolStream errors out",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [
+    {
+      "title": "should work",
+      "fullTitle": "Accessibility should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should report uninteresting nodes",
+      "fullTitle": "Accessibility should report uninteresting nodes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "get snapshots while the tree is re-calculated",
+      "fullTitle": "Accessibility get snapshots while the tree is re-calculated",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "roledescription",
+      "fullTitle": "Accessibility roledescription",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "orientation",
+      "fullTitle": "Accessibility orientation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "autocomplete",
+      "fullTitle": "Accessibility autocomplete",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "multiselectable",
+      "fullTitle": "Accessibility multiselectable",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "keyshortcuts",
+      "fullTitle": "Accessibility keyshortcuts",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should not report text nodes inside controls",
+      "fullTitle": "Accessibility filtering children of leaf nodes should not report text nodes inside controls",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rich text editable fields should have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes rich text editable fields should have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rich text editable fields with role should have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes rich text editable fields with role should have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "non editable textbox with role and tabIndex and label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes non editable textbox with role and tabIndex and label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "checkbox with and tabIndex and label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes checkbox with and tabIndex and label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "checkbox without label should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes checkbox without label should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "plain text field with role should not have children",
+      "fullTitle": "Accessibility filtering children of leaf nodes plaintext contenteditable plain text field with role should not have children",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work a button",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work a button",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work an input",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work an input",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work a menu",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should work a menu",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return null when the element is no longer in DOM",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should return null when the element is no longer in DOM",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the interestingOnly option",
+      "fullTitle": "Accessibility filtering children of leaf nodes root option should support the interestingOnly option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/accessibility.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button",
+      "fullTitle": "AriaQueryHandler parseAriaSelector should find button",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button by role",
+      "fullTitle": "AriaQueryHandler queryOne should find button by role",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find button by name and role",
+      "fullTitle": "AriaQueryHandler queryOne should find button by name and role",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find first matching element",
+      "fullTitle": "AriaQueryHandler queryOne should find first matching element",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name",
+      "fullTitle": "AriaQueryHandler queryOne should find by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name",
+      "fullTitle": "AriaQueryHandler queryOne should find by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find menu by name",
+      "fullTitle": "AriaQueryHandler queryAll should find menu by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "$$eval should handle many elements",
+      "fullTitle": "AriaQueryHandler queryAllArray $$eval should handle many elements",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should immediately resolve promise if node exists",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should immediately resolve promise if node exists",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work for ElementHandle.waitForSelector",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work for ElementHandle.waitForSelector",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should persist query handler bindings across reloads",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should persist query handler bindings across reloads",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should persist query handler bindings across navigations",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should persist query handler bindings across navigations",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work independently of `exposeFunction`",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work independently of `exposeFunction`",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with removed MutationObserver",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work with removed MutationObserver",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should resolve promise when node is added",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should resolve promise when node is added",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work when node is added through innerHTML",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should work when node is added through innerHTML",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Page.waitForSelector is shortcut for main frame",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) Page.waitForSelector is shortcut for main frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run in specified frame",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should run in specified frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when frame is detached",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should throw when frame is detached",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should survive cross-process navigation",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should survive cross-process navigation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should wait for visible",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should wait for visible",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should wait for visible recursively",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should wait for visible recursively",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for visibility: hidden",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for visibility: hidden",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for display: none",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for display: none",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "hidden should wait for removal",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) hidden should wait for removal",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return null if waiting to hide non-existing element",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should return null if waiting to hide non-existing element",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect timeout",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should respect timeout",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have an error message specifically for awaiting an element to be hidden",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should have an error message specifically for awaiting an element to be hidden",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respond to node attribute mutation",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should respond to node attribute mutation",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return the element handle",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should return the element handle",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have correct stack trace for timeout",
+      "fullTitle": "AriaQueryHandler waitForSelector (aria) should have correct stack trace for timeout",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name \"foo\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by name \"foo\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by name \"bar\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by name \"bar\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find treeitem by name",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find treeitem by name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by role \"button\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by role \"button\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find by role \"heading\"",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find by role \"heading\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should find both ignored and unignored",
+      "fullTitle": "AriaQueryHandler queryOne (Chromium web test) should find both ignored and unignored",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ariaqueryhandler.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect using browserUrl, with and without trailing slash",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should be able to connect using browserUrl, with and without trailing slash",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when using both browserWSEndpoint and browserURL",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should throw when using both browserWSEndpoint and browserURL",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw when trying to connect to non-existing browser",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should throw when trying to connect to non-existing browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the pipe option",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should support the pipe option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support the pipe argument",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should support the pipe argument",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should fire \"disconnected\" when closing with pipe",
+      "fullTitle": "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should fire \"disconnected\" when closing with pipe",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on: adds an event listener that is fired when the event is emitted",
+      "fullTitle": "EventEmitter on on: adds an event listener that is fired when the event is emitted",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on sends the event data to the handler",
+      "fullTitle": "EventEmitter on on sends the event data to the handler",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "on: supports chaining",
+      "fullTitle": "EventEmitter on on: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener: adds an event listener that is fired when the event is emitted",
+      "fullTitle": "EventEmitter on addListener: adds an event listener that is fired when the event is emitted",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener sends the event data to the handler",
+      "fullTitle": "EventEmitter on addListener sends the event data to the handler",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "addListener: supports chaining",
+      "fullTitle": "EventEmitter on addListener: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "off: removes the listener so it is no longer called",
+      "fullTitle": "EventEmitter off off: removes the listener so it is no longer called",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "off: supports chaining",
+      "fullTitle": "EventEmitter off off: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removeListener: removes the listener so it is no longer called",
+      "fullTitle": "EventEmitter off removeListener: removes the listener so it is no longer called",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removeListener: supports chaining",
+      "fullTitle": "EventEmitter off removeListener: supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "only calls the listener once and then removes it",
+      "fullTitle": "EventEmitter once only calls the listener once and then removes it",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "supports chaining",
+      "fullTitle": "EventEmitter once supports chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "calls all the listeners for an event",
+      "fullTitle": "EventEmitter emit calls all the listeners for an event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "passes data through to the listener",
+      "fullTitle": "EventEmitter emit passes data through to the listener",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns true if the event has listeners",
+      "fullTitle": "EventEmitter emit returns true if the event has listeners",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns false if the event has listeners",
+      "fullTitle": "EventEmitter emit returns false if the event has listeners",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the number of listeners for the given event",
+      "fullTitle": "EventEmitter listenerCount returns the number of listeners for the given event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "removes every listener from all events by default",
+      "fullTitle": "EventEmitter removeAllListeners removes every listener from all events by default",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the emitter for chaining",
+      "fullTitle": "EventEmitter removeAllListeners returns the emitter for chaining",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "can filter to remove only listeners for a given event name",
+      "fullTitle": "EventEmitter removeAllListeners can filter to remove only listeners for a given event name",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/EventEmitter.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "dumpio option should work with pipe option",
+      "fullTitle": "Fixtures dumpio option should work with pipe option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should dump browser process stderr",
+      "fullTitle": "Fixtures should dump browser process stderr",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should close the browser when the node process closes",
+      "fullTitle": "Fixtures should close the browser when the node process closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/fixtures.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "background_page target type should be available",
+      "fullTitle": "headful tests HEADFUL background_page target type should be available",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "service_worker target type should be available",
+      "fullTitle": "headful tests HEADFUL service_worker target type should be available",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "target.page() should return a background_page",
+      "fullTitle": "headful tests HEADFUL target.page() should return a background_page",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "target.page() should return a DevTools page if custom isPageTarget is provided",
+      "fullTitle": "headful tests HEADFUL target.page() should return a DevTools page if custom isPageTarget is provided",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have default url when launching browser",
+      "fullTitle": "headful tests HEADFUL should have default url when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "headless should be able to read cookies written by headful",
+      "fullTitle": "headful tests HEADFUL headless should be able to read cookies written by headful",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "OOPIF: should report google.com frame",
+      "fullTitle": "headful tests HEADFUL OOPIF: should report google.com frame",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "OOPIF: should expose events within OOPIFs",
+      "fullTitle": "headful tests HEADFUL OOPIF: should expose events within OOPIFs",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should close browser with beforeunload page",
+      "fullTitle": "headful tests HEADFUL should close browser with beforeunload page",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should open devtools when \"devtools: true\" option is given",
+      "fullTitle": "headful tests HEADFUL should open devtools when \"devtools: true\" option is given",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "headful tests Page.bringToFront should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run in parallel in multiple pages",
+      "fullTitle": "headful tests Page.screenshot should run in parallel in multiple pages",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/headful.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should download and extract chrome linux binary",
+      "fullTitle": "Launcher specs Puppeteer BrowserFetcher should download and extract chrome linux binary",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should download and extract firefox linux binary",
+      "fullTitle": "Launcher specs Puppeteer BrowserFetcher should download and extract firefox linux binary",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject navigation when browser closes",
+      "fullTitle": "Launcher specs Puppeteer Browser.disconnect should reject navigation when browser closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject waitForSelector when browser closes",
+      "fullTitle": "Launcher specs Puppeteer Browser.disconnect should reject waitForSelector when browser closes",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should terminate network waiters",
+      "fullTitle": "Launcher specs Puppeteer Browser.close should terminate network waiters",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject all promises when browser is closed",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should reject all promises when browser is closed",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should reject if executable path is invalid",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should reject if executable path is invalid",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "tmp profile should be cleaned up",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch tmp profile should be cleaned up",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option restores preferences",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option restores preferences",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir argument",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir argument",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir argument with non-existent dir",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir argument with non-existent dir",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option should restore state",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option should restore state",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "userDataDir option should restore cookies",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch userDataDir option should restore cookies",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return the default arguments",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should return the default arguments",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should report the correct product",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should report the correct product",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with no default arguments",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should work with no default arguments",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should filter out ignored default arguments in Chrome",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should filter out ignored default arguments in Chrome",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should filter out ignored default argument in Firefox",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should filter out ignored default argument in Firefox",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have default URL when launching browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should have default URL when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have custom URL when launching browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should have custom URL when launching browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should pass the timeout parameter to browser.waitForTarget",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should pass the timeout parameter to browser.waitForTarget",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work with timeout = 0",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should work with timeout = 0",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the default viewport",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should set the default viewport",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should disable the default viewport",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should disable the default viewport",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should take fullPage screenshots when defaultViewport is null",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should take fullPage screenshots when defaultViewport is null",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should set the debugging port",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should set the debugging port",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should not allow setting debuggingPort and pipe",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should not allow setting debuggingPort and pipe",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should launch Chrome properly with --no-startup-window and waitForInitialPage=false",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should launch Chrome properly with --no-startup-window and waitForInitialPage=false",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to launch Chrome",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should be able to launch Chrome",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to launch Firefox",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch should be able to launch Firefox",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect multiple times to the same browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect multiple times to the same browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to close remote browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to close remote browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect to a browser with no page targets",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect to a browser with no page targets",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support ignoreHTTPSErrors option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support ignoreHTTPSErrors option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support targetFilter option in puppeteer.launch",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support targetFilter option in puppeteer.launch",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support targetFilter option",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should support targetFilter option",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to reconnect to a disconnected browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to reconnect to a disconnected browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to connect to the same page simultaneously",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to connect to the same page simultaneously",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be able to reconnect",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.connect should be able to reconnect",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns executablePath for channel",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath returns executablePath for channel",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "its value is used",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when executable path is configured its value is used",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns /usr/bin/chromium-browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable exists returns /usr/bin/chromium-browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "its value is used",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable exists and the executable path is configured its value is used",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not return /usr/bin/chromium-browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.executablePath when the product is chrome, platform is not darwin, and arch is arm64 and the executable does not exist does not return /usr/bin/chromium-browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work",
+      "fullTitle": "Launcher specs Browser target events should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
+      "fullTitle": "Launcher specs Browser.Events.disconnected should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should process extra info on multiple redirects",
+      "fullTitle": "NetworkManager should process extra info on multiple redirects",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle \"double pause\" (crbug.com/1196004) Fetch.requestPaused events for the same Network.requestWillBeSent event",
+      "fullTitle": "NetworkManager should handle \"double pause\" (crbug.com/1196004) Fetch.requestPaused events for the same Network.requestWillBeSent event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should handle Network.responseReceivedExtraInfo event after Network.responseReceived event (github.com/puppeteer/puppeteer/issues/8234)",
+      "fullTitle": "NetworkManager should handle Network.responseReceivedExtraInfo event after Network.responseReceived event (github.com/puppeteer/puppeteer/issues/8234)",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should resolve the response once the late responseReceivedExtraInfo event arrives",
+      "fullTitle": "NetworkManager should resolve the response once the late responseReceivedExtraInfo event arrives",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send responses for iframe that don't receive loadingFinished event",
+      "fullTitle": "NetworkManager should send responses for iframe that don't receive loadingFinished event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send responses for iframe that don't receive loadingFinished event",
+      "fullTitle": "NetworkManager should send responses for iframe that don't receive loadingFinished event",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/NetworkManager.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured",
+      "fullTitle": "request proxy should proxy requests when configured",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list",
+      "fullTitle": "request proxy should respect proxy bypass list",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured at browser level",
+      "fullTitle": "request proxy in incognito browser context should proxy requests when configured at browser level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list when configured at browser level",
+      "fullTitle": "request proxy in incognito browser context should respect proxy bypass list when configured at browser level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should proxy requests when configured at context level",
+      "fullTitle": "request proxy in incognito browser context should proxy requests when configured at context level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect proxy bypass list when configured at context level",
+      "fullTitle": "request proxy in incognito browser context should respect proxy bypass list when configured at context level",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/proxy.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should output a trace",
+      "fullTitle": "Tracing should output a trace",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run with custom categories if provided",
+      "fullTitle": "Tracing should run with custom categories if provided",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should run with default categories",
+      "fullTitle": "Tracing should run with default categories",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should throw if tracing on two pages",
+      "fullTitle": "Tracing should throw if tracing on two pages",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return a buffer",
+      "fullTitle": "Tracing should return a buffer",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should work without options",
+      "fullTitle": "Tracing should work without options",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return undefined in case of Buffer error",
+      "fullTitle": "Tracing should return undefined in case of Buffer error",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should support a buffer without a path",
+      "fullTitle": "Tracing should support a buffer without a path",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should properly fail if readProtocolStream errors out",
+      "fullTitle": "Tracing should properly fail if readProtocolStream errors out",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/tracing.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "failures": [
+    {
+      "title": "\"before all\" hook in \"Browser specs\"",
+      "fullTitle": "Browser specs \"before all\" hook in \"Browser specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js",
+      "duration": 25000,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browser.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should have default context\"",
+      "fullTitle": "BrowserContext \"before all\" hook for \"should have default context\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/browsercontext.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should work\"",
+      "fullTitle": "Target.createCDPSession \"before all\" hook for \"should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js",
+      "duration": 25009,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/CDPSession.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"Page.setRequestInterception should work with intervention headers\"",
+      "fullTitle": "Chromium-Specific Page Tests \"before all\" hook for \"Page.setRequestInterception should work with intervention headers\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+      "duration": 25013,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/chromiumonly.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should click the button\"",
+      "fullTitle": "Page.click \"before all\" hook for \"should click the button\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js",
+      "duration": 25015,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/click.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Cookie specs\"",
+      "fullTitle": "Cookie specs \"before all\" hook in \"Cookie specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js",
+      "duration": 25009,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/cookies.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should work\"",
+      "fullTitle": "Coverage specs JSCoverage \"before all\" hook for \"should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+      "duration": 25019,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should work\"",
+      "fullTitle": "Coverage specs CSSCoverage \"before all\" hook for \"should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+      "duration": 25024,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/coverage.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"page.cookies() should work\"",
+      "fullTitle": "DefaultBrowserContext \"before all\" hook for \"page.cookies() should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/defaultbrowsercontext.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should fire\"",
+      "fullTitle": "Page.Events.Dialog \"before all\" hook for \"should fire\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js",
+      "duration": 25008,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/dialog.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should throw an exception if not enabled before usage\"",
+      "fullTitle": "Input.drag \"before all\" hook for \"should throw an exception if not enabled before usage\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/drag-and-drop.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"ElementHandle specs\"",
+      "fullTitle": "ElementHandle specs \"before all\" hook in \"ElementHandle specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js",
+      "duration": 25024,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/elementhandle.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Emulation\"",
+      "fullTitle": "Emulation \"before all\" hook in \"Emulation\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/emulation.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Evaluation specs\"",
+      "fullTitle": "Evaluation specs \"before all\" hook in \"Evaluation specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js",
+      "duration": 25003,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/evaluation.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Frame specs\"",
+      "fullTitle": "Frame specs \"before all\" hook in \"Frame specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js",
+      "duration": 25021,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/frame.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"changing idle state emulation causes change of the IdleDetector state\"",
+      "fullTitle": "Emulate idle state \"before all\" hook for \"changing idle state emulation causes change of the IdleDetector state\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/idle_override.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should work\"",
+      "fullTitle": "ignoreHTTPSErrors \"before all\" hook for \"should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"after all\" hook for \"should work with mixed content\"",
+      "fullTitle": "ignoreHTTPSErrors \"after all\" hook for \"should work with mixed content\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/ignorehttpserrors.spec.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'close')\n    at Context.<anonymous> (test/src/ignorehttpserrors.spec.ts:44:19)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'close')",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read properties of undefined (reading 'close')"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should work\"",
+      "fullTitle": "PuppeteerUtil tests \"before all\" hook for \"should work\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js",
+      "duration": 25013,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/injected.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"input tests\"",
+      "fullTitle": "input tests \"before all\" hook in \"input tests\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/input.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"JSHandle\"",
+      "fullTitle": "JSHandle \"before all\" hook in \"JSHandle\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js",
+      "duration": 25006,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/jshandle.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should type into a textarea\"",
+      "fullTitle": "Keyboard \"before all\" hook for \"should type into a textarea\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/keyboard.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "can launch and close the browser",
+      "fullTitle": "Launcher specs Puppeteer Puppeteer.launch can launch and close the browser",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+      "duration": 25023,
+      "currentRetry": 2,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/launcher.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should click the document\"",
+      "fullTitle": "Mouse \"before all\" hook for \"should click the document\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/mouse.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"navigation\"",
+      "fullTitle": "navigation \"before all\" hook in \"navigation\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/navigation.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"network\"",
+      "fullTitle": "network \"before all\" hook in \"network\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/network.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should treat OOP iframes and normal iframes the same\"",
+      "fullTitle": "OOPIF-debug OOPIF \"before all\" hook for \"should treat OOP iframes and normal iframes the same\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"after all\" hook for \"should support lazy OOP frames\"",
+      "fullTitle": "OOPIF-debug OOPIF \"after all\" hook for \"should support lazy OOP frames\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/oopif.spec.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'close')\n    at Context.<anonymous> (test/src/oopif.spec.ts:53:19)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'close')",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read properties of undefined (reading 'close')"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Page\"",
+      "fullTitle": "Page \"before all\" hook in \"Page\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js",
+      "duration": 25000,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/page.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Query handler tests\"",
+      "fullTitle": "Query handler tests \"before all\" hook in \"Query handler tests\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js",
+      "duration": 25021,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryhandler.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"querySelector\"",
+      "fullTitle": "querySelector \"before all\" hook in \"querySelector\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js",
+      "duration": 25024,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/queryselector.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"request interception\"",
+      "fullTitle": "request interception \"before all\" hook in \"request interception\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js",
+      "duration": 25021,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception-experimental.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"request interception\"",
+      "fullTitle": "request interception \"before all\" hook in \"request interception\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/requestinterception.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"Screenshots\"",
+      "fullTitle": "Screenshots \"before all\" hook in \"Screenshots\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/screenshot.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"Browser.targets should return all of the targets\"",
+      "fullTitle": "Target \"before all\" hook for \"Browser.targets should return all of the targets\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/target.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should handle targets\"",
+      "fullTitle": "TargetManager \"before all\" hook for \"should handle targets\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js",
+      "duration": 25022,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"after all\" hook for \"should handle targets\"",
+      "fullTitle": "TargetManager \"after all\" hook for \"should handle targets\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/TargetManager.spec.js",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'close')\n    at Context.<anonymous> (test/src/TargetManager.spec.ts:54:19)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'close')",
+        "multiple": [
+          {
+            "multiple": "TypeError: Cannot read properties of undefined (reading 'close')"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"should tap the button\"",
+      "fullTitle": "Touchscreen \"before all\" hook for \"should tap the button\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js",
+      "duration": 25019,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/touchscreen.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"waittask specs\"",
+      "fullTitle": "waittask specs \"before all\" hook in \"waittask specs\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js",
+      "duration": 25023,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/waittask.spec.js)"
+          }
+        ]
+      }
+    },
+    {
+      "title": "\"before all\" hook for \"Page.workers\"",
+      "fullTitle": "Workers \"before all\" hook for \"Page.workers\"",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js",
+      "duration": 25004,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js)\n    at listOnTimeout (node:internal/timers:559:17)\n    at processTimers (node:internal/timers:502:7)",
+        "message": "Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js)",
+        "code": "ERR_MOCHA_TIMEOUT",
+        "timeout": 25000,
+        "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js",
+        "multiple": [
+          {
+            "code": "ERR_MOCHA_TIMEOUT",
+            "timeout": 25000,
+            "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js",
+            "multiple": "Error: Timeout of 25000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/worker.spec.js)"
+          }
+        ]
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "should work",
+      "fullTitle": "WebDriver BiDi Connection should work",
+      "file": "/tmp/tmp.MWiOxfvCeg/puppeteer/test/build/bidi/Connection.spec.js",
+      "duration": 3,
+      "currentRetry": 0,
+      "speed": "fast",
+      "err": {}
+    }
+  ]
+}
