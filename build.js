@@ -12,7 +12,8 @@ async function main() {
     height: 2163,
   });
   await page.goto('http://localhost:9001/');
-  await page.waitForSelector('.has-chart');
+  await page.waitForSelector('canvas');
+  await new Promise(resolve => setTimeout(resolve, 1000));
   await page.evaluate(() => {
     const scripts = document.querySelectorAll('script');
     for (const script of scripts) {

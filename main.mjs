@@ -1,42 +1,11 @@
-const nf = new Intl.NumberFormat('en');
-function formatNumber(number) {
-  return nf.format(number);
-}
-
 const pf = new Intl.NumberFormat('en', {
   style: 'unit',
   unit: 'percent',
-  maximumFractionDigits: 0,
+  maximumFractionDigits: 2,
 });
+
 function formatPercentage(number) {
   return pf.format(number * 100);
-}
-
-function format({ passing, total }) {
-  return `${ formatNumber(passing) } out of ${ formatNumber(total) } tests are passing. (${ formatPercentage(passing / total) })`;
-}
-
-function renderChart(chartData, limit) {
-  google.charts.load('current', { packages: ['corechart'] });
-  google.charts.setOnLoadCallback(drawChart);
-
-  function drawChart() {
-    const data = google.visualization.arrayToDataTable(chartData);
-
-    const options = {
-      vAxis: { minValue: 0, maxValue: limit },
-      hAxis: { format: 'MMM d' },
-      tooltip: {isHtml: true},
-      colors: ['#3366cc', '#dc3912', '#ff9900', '#aaaaaa'],
-      theme: 'maximized'
-    };
-
-    const chart = new google.visualization.AreaChart(document.querySelector('#chart'));
-    google.visualization.events.addListener(chart, 'ready', () => {
-      document.documentElement.classList.add('has-chart');
-    });
-    chart.draw(data, options);
-  }
 }
 
 function buildTooltip(label, counts) {
@@ -44,7 +13,7 @@ function buildTooltip(label, counts) {
     <div style="padding: 10px; font-size: 18px;">
       <h3 style="margin: 0;">${label}</h3>
       <div>Total: ${counts.total}</div>
-      <div>Passing: ${counts.passing}</div>
+      <div>Passing: ${counts.passing} (${formatPercentage(counts.passing / counts.total)})</div>
       <div>Skipping: ${counts.skipping}</div>
       <div>Failing: ${counts.failing}</div>
     </div>
@@ -54,19 +23,102 @@ function buildTooltip(label, counts) {
 async function main() {
   const response = await fetch('./data.json');
   const entries = await response.json();
-  const chartData = [
-    ['date', 'tests passed (Firefox)', {type: 'string', role: 'tooltip', 'p': {'html': true}}, 'tests passed (Chrome)', {type: 'string', role: 'tooltip', 'p': {'html': true}}],
-  ];
-  let limit = 0;
+  const chartData = []
   for (const entry of entries) {
     const { date, firefoxCounts, chromeCounts } = entry;
+    if (date < new Date().getTime() - 7 * 24 * 60 * 60 * 1000) {
+      continue
+    }
     chartData.push(
-      [new Date(date), firefoxCounts.passing, buildTooltip('Firefox', firefoxCounts), chromeCounts.passing, buildTooltip('Chrome', chromeCounts)]
+      [new Date(date), firefoxCounts.passing / firefoxCounts.total * 100, chromeCounts.passing / chromeCounts.total * 100, buildTooltip('Firefox', firefoxCounts), buildTooltip('Chrome', chromeCounts)]
     );
-    limit = Math.max(limit, Math.max(firefoxCounts.passing, chromeCounts.passing));
-    console.log(`${ new Date(date).toUTCString() }: ${ format(firefoxCounts) } : ${ format(chromeCounts) }`);
   }
-  renderChart(chartData, limit * 2);
+
+  const ctx = document.getElementById('chart');
+
+  const getOrCreateTooltip = (chart) => {
+    let tooltipEl = chart.canvas.parentNode.querySelector('div');
+  
+    if (!tooltipEl) {
+      tooltipEl = document.createElement('div');
+      tooltipEl.style.background = 'rgba(0, 0, 0, 0.7)';
+      tooltipEl.style.borderRadius = '3px';
+      tooltipEl.style.color = 'white';
+      tooltipEl.style.opacity = 1;
+      tooltipEl.style.pointerEvents = 'none';
+      tooltipEl.style.position = 'absolute';
+      tooltipEl.style.transform = 'translate(-50%, 0)';
+      tooltipEl.style.transition = 'all .1s ease';
+  
+      const table = document.createElement('table');
+      table.style.margin = '0px';
+  
+      tooltipEl.appendChild(table);
+      chart.canvas.parentNode.appendChild(tooltipEl);
+    }
+  
+    return tooltipEl;
+  };
+  
+  const externalTooltipHandler = (context) => {
+    // Tooltip Element
+    const {chart, tooltip} = context;
+    const tooltipEl = getOrCreateTooltip(chart);
+  
+    // Hide if no tooltip
+    if (tooltip.opacity === 0) {
+      tooltipEl.style.opacity = 0;
+      return;
+    }
+  
+    // Set Text
+    if (tooltip.body) {
+      const dataPoints = tooltip.dataPoints;
+      const dataPoint = dataPoints[0];
+      const dataIndex = dataPoint.dataIndex;
+      const datasetIndex = dataPoint.datasetIndex;
+      tooltipEl.innerHTML = chartData[dataIndex][3 + datasetIndex];
+    }
+  
+    const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
+  
+    // Display, position, and set styles for font
+    tooltipEl.style.opacity = 1;
+    tooltipEl.style.left = positionX + tooltip.caretX + 'px';
+    tooltipEl.style.top = Math.max(positionY + tooltip.caretY - 200 , 0) + 'px';
+    tooltipEl.style.font = tooltip.options.bodyFont.string;
+    tooltipEl.style.padding = tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
+  };
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: chartData.map(item => item[0].toLocaleDateString('en-US')),
+      datasets: [{
+        label: 'tests passed (Firefox)',
+        data: chartData.map(item => item[1]),
+        borderWidth: 1
+      }, {
+        label: 'tests passed (Chrome)',
+        data: chartData.map(item => item[2]),
+        borderWidth: 1
+      }]
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          external: externalTooltipHandler
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          min: 0,
+        }
+      }
+    }
+  });
 
   const elTime = document.querySelector('time');
   const date = new Date().toISOString().slice(0, 'YYYY-MM-DD'.length);

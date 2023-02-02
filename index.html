@@ -6,10 +6,13 @@
 <style>
   html { font: 1rem/1.6 sans-serif; }
   h1 { text-align: center; font-size: 36px; }
-  #chart { height: 90vh; width: calc(100vw - 40px); margin: auto; }
+  #area { height: 90vh; width: calc(100vw - 40px); display: flex; justify-content: center; }
 </style>
 <h1>Is Puppeteer ready for WebDriver BiDi yet?</h1>
-<div id="chart"></div>
+<div id="area">
+  <canvas id="chart"></canvas>
+</div>
 <footer><a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready">source code</a> · last updated at <time>YYYY-MM-DD</time></footer>
-<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
 <script type="module" src="main.mjs"></script>
