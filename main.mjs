@@ -115,6 +115,11 @@ async function main() {
         y: {
           beginAtZero: true,
           min: 0,
+          ticks: {
+            callback: function(value, index, ticks) {
+                return value + '%';
+            }
+          }
         }
       }
     }
