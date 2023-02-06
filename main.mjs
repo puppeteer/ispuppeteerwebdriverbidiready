@@ -23,16 +23,23 @@ function buildTooltip(label, counts) {
 async function main() {
   const response = await fetch('./data.json');
   const entries = await response.json();
-  const chartData = []
-  for (const entry of entries) {
+  const chartData = [];
+  let prev = [];
+  for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts } = entry;
-    if (date < new Date().getTime() - 7 * 24 * 60 * 60 * 1000) {
-      continue
+    if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing) {
+      continue;
     }
+    prev = [chromeCounts.passing, firefoxCounts.passing];
     chartData.push(
       [new Date(date), firefoxCounts.passing / firefoxCounts.total * 100, chromeCounts.passing / chromeCounts.total * 100, buildTooltip('Firefox', firefoxCounts), buildTooltip('Chrome', chromeCounts)]
     );
+    if (chartData.length > 7) {
+      return;
+    }
   }
+
+  chartData.reverse();
 
   const ctx = document.getElementById('chart');
 
@@ -95,11 +102,11 @@ async function main() {
     data: {
       labels: chartData.map(item => item[0].toLocaleDateString('en-US')),
       datasets: [{
-        label: 'tests passed (Firefox)',
+        label: '% tests passed (Firefox)',
         data: chartData.map(item => item[1]),
         borderWidth: 1
       }, {
-        label: 'tests passed (Chrome)',
+        label: '% tests passed (Chrome)',
         data: chartData.map(item => item[2]),
         borderWidth: 1
       }]
