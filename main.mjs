@@ -35,7 +35,7 @@ async function main() {
       [new Date(date), firefoxCounts.passing / firefoxCounts.total * 100, chromeCounts.passing / chromeCounts.total * 100, buildTooltip('Firefox', firefoxCounts), buildTooltip('Chrome', chromeCounts)]
     );
     if (chartData.length > 7) {
-      return;
+      break;
     }
   }
 
