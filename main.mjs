@@ -8,6 +8,10 @@ function formatPercentage(number) {
   return pf.format(number * 100);
 }
 
+function formatDate(date) {
+  return date.toISOString().slice(0, 'yyyy-mm-dd'.length);
+}
+
 function buildTooltip(label, counts) {
   return `
     <div style="padding: 10px; font-size: 18px;">
@@ -45,10 +49,10 @@ async function main() {
 
   const getOrCreateTooltip = (chart) => {
     let tooltipEl = chart.canvas.parentNode.querySelector('div');
-  
+
     if (!tooltipEl) {
       tooltipEl = document.createElement('div');
-      tooltipEl.style.background = 'rgba(0, 0, 0, 0.7)';
+      tooltipEl.style.background = 'rgb(0 0 0 / 70%)';
       tooltipEl.style.borderRadius = '3px';
       tooltipEl.style.color = 'white';
       tooltipEl.style.opacity = 1;
@@ -56,28 +60,28 @@ async function main() {
       tooltipEl.style.position = 'absolute';
       tooltipEl.style.transform = 'translate(-50%, 0)';
       tooltipEl.style.transition = 'all .1s ease';
-  
+
       const table = document.createElement('table');
       table.style.margin = '0px';
-  
+
       tooltipEl.appendChild(table);
       chart.canvas.parentNode.appendChild(tooltipEl);
     }
-  
+
     return tooltipEl;
   };
-  
+
   const externalTooltipHandler = (context) => {
     // Tooltip Element
     const {chart, tooltip} = context;
     const tooltipEl = getOrCreateTooltip(chart);
-  
+
     // Hide if no tooltip
     if (tooltip.opacity === 0) {
       tooltipEl.style.opacity = 0;
       return;
     }
-  
+
     // Set Text
     if (tooltip.body) {
       const dataPoints = tooltip.dataPoints;
@@ -86,9 +90,9 @@ async function main() {
       const datasetIndex = dataPoint.datasetIndex;
       tooltipEl.innerHTML = chartData[dataIndex][3 + datasetIndex];
     }
-  
+
     const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
-  
+
     // Display, position, and set styles for font
     tooltipEl.style.opacity = 1;
     tooltipEl.style.left = positionX + tooltip.caretX + 'px';
@@ -100,7 +104,7 @@ async function main() {
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: chartData.map(item => item[0].toLocaleDateString('en-US')),
+      labels: chartData.map(item => formatDate(item[0])),
       datasets: [{
         label: '% tests passed (Firefox)',
         data: chartData.map(item => item[1]),
@@ -133,7 +137,7 @@ async function main() {
   });
 
   const elTime = document.querySelector('time');
-  const date = new Date().toISOString().slice(0, 'YYYY-MM-DD'.length);
+  const date = formatDate(new Date());
   elTime.textContent = date;
 }
 
