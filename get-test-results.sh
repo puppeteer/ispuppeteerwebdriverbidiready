@@ -31,7 +31,6 @@ bidi-chrome() {
   cp ./stats.json $CWD/data/chrome-$timestamp.json
 }
 
-cdp-firefox &
-bidi-firefox &
-bidi-chrome &
-wait
+cdp-firefox
+bidi-firefox
+bidi-chrome
