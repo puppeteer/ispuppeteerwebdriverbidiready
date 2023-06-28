@@ -13,14 +13,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-      # - name: Fetch data
-      #   run: |
-      #     ./get-test-results.sh
-      #     git config --global user.name "GitHub Actions"
-      #     git config --global user.email "username@users.noreply.github.com"
-      #     git add data --all
-      #     git commit -a -m "Test results obtained via GitHub Actions"
-      #     git push
+      - name: Fetch data
+        run: |
+          ./get-test-results.sh
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "username@users.noreply.github.com"
+          git add data --all
+          git commit -a -m "Test results obtained via GitHub Actions"
+          git push
       - name: Build
         run: |
           npm install
