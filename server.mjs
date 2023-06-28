@@ -1,46 +1,46 @@
-const http = require('http');
-const fs = require('fs');
+import { createServer } from 'http';
+import { readFileSync } from 'fs';
 
-const server = http.createServer((req, res) => {
+const server = createServer((req, res) => {
   console.log(`Receiving a request for ${req.url}`);
   switch (req.url) {
     case '/':
     case '/index.html': {
       res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
-      res.end(fs.readFileSync('./index.html'));
+      res.end(readFileSync('./index.html'));
       break;
     }
     case '/main.mjs': {
       res.writeHead(200, { 'Content-Type': 'text/javascript;charset=utf-8' });
-      res.end(fs.readFileSync('./main.mjs'));
+      res.end(readFileSync('./main.mjs'));
       break;
     }
     case '/data.json': {
       res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
-      res.end(fs.readFileSync('./data.json'));
+      res.end(readFileSync('./data.json'));
+      break;
+    }
+    case '/firefox-delta.json': {
+      res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
+      res.end(readFileSync('./firefox-delta.json'));
       break;
     }
   }
 });
 
-const start = (port = 9001) => {
+export const start = (port = 9001) => {
   server.listen(port);
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     server.on('listening', () => {
       resolve();
     });
   });
 };
 
-const stop = () => {
-  return new Promise((resolve, reject) => {
+export const stop = () => {
+  return new Promise((resolve) => {
     server.close(() => {
       resolve();
     });
   });
-};
-
-module.exports = {
-  start,
-  stop,
 };

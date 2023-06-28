@@ -1,5 +1,6 @@
 data.json
 firefox-delta.json
+data/*
 dist
 
 # Installed npm modules

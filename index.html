@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8">
-<title>Is Puppeteer ready for WebDriver BiDi yet?</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>
-  html { font: 1rem/1.6 sans-serif; }
-  h1 { text-align: center; font-size: 36px; }
-  #area { height: 90vh; width: calc(100vw - 40px); display: flex; justify-content: center; }
-</style>
-<h1>Is Puppeteer ready for WebDriver BiDi yet?</h1>
-<div id="area">
-  <canvas id="chart"></canvas>
-</div>
-<footer><a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready">source code</a> · last updated at <time>YYYY-MM-DD</time></footer>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-<script type="module" src="main.mjs"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Puppeteer ready for WebDriver BiDi yet?</title>
+  </head>
+  <body>
+    <style>
+      html {
+        font: 1rem/1.6 sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+      #main {
+        height: 100vh;
+        width: calc(100vw - 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #area {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        justify-content: center;
+      }
+      footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      @media screen and (min-width: 1900px) {
+        footer {
+          font-size: 32px;
+        }
+      }
+      #delta {
+        font-weight: bold;
+      }
+    </style>
+    <div id="main">
+      <h1>Is Puppeteer ready for WebDriver BiDi yet?</h1>
+      <div id="area">
+        <canvas id="chart"></canvas>
+      </div>
+      <footer>
+        <div>
+          Firefox CDP currently support <span id="delta"></span> additional test
+          then Firefox BiDi
+        </div>
+        <div>
+          <a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready"
+            >source code</a
+          >
+          · last updated at <time>YYYY-MM-DD</time>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script type="module" src="main.mjs"></script>
+  </body>
+</html>

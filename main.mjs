@@ -17,7 +17,9 @@ function buildTooltip(label, counts) {
     <div style="padding: 10px; font-size: 18px;">
       <h3 style="margin: 0;">${label}</h3>
       <div>Total: ${counts.total}</div>
-      <div>Passing: ${counts.passing} (${formatPercentage(counts.passing / counts.total)})</div>
+      <div>Passing: ${counts.passing} (${formatPercentage(
+    counts.passing / counts.total
+  )})</div>
       <div>Skipping: ${counts.skipping}</div>
       <div>Failing: ${counts.failing}</div>
     </div>
@@ -35,9 +37,13 @@ async function main() {
       continue;
     }
     prev = [chromeCounts.passing, firefoxCounts.passing];
-    chartData.push(
-      [new Date(date), firefoxCounts.passing / firefoxCounts.total * 100, chromeCounts.passing / chromeCounts.total * 100, buildTooltip('Firefox', firefoxCounts), buildTooltip('Chrome', chromeCounts)]
-    );
+    chartData.push([
+      new Date(date),
+      (firefoxCounts.passing / firefoxCounts.total) * 100,
+      (chromeCounts.passing / chromeCounts.total) * 100,
+      buildTooltip('Firefox', firefoxCounts),
+      buildTooltip('Chrome', chromeCounts),
+    ]);
     if (chartData.length > 7) {
       break;
     }
@@ -73,7 +79,7 @@ async function main() {
 
   const externalTooltipHandler = (context) => {
     // Tooltip Element
-    const {chart, tooltip} = context;
+    const { chart, tooltip } = context;
     const tooltipEl = getOrCreateTooltip(chart);
 
     // Hide if no tooltip
@@ -91,54 +97,66 @@ async function main() {
       tooltipEl.innerHTML = chartData[dataIndex][3 + datasetIndex];
     }
 
-    const {offsetLeft: positionX, offsetTop: positionY} = chart.canvas;
+    const { offsetLeft: positionX, offsetTop: positionY } = chart.canvas;
 
     // Display, position, and set styles for font
     tooltipEl.style.opacity = 1;
     tooltipEl.style.left = positionX + tooltip.caretX + 'px';
-    tooltipEl.style.top = Math.max(positionY + tooltip.caretY - 200 , 0) + 'px';
+    tooltipEl.style.top = Math.max(positionY + tooltip.caretY - 200, 0) + 'px';
     tooltipEl.style.font = tooltip.options.bodyFont.string;
-    tooltipEl.style.padding = tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
+    tooltipEl.style.padding =
+      tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
   };
 
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: chartData.map(item => formatDate(item[0])),
-      datasets: [{
-        label: '% tests passed (Firefox)',
-        data: chartData.map(item => item[1]),
-        borderWidth: 1
-      }, {
-        label: '% tests passed (Chrome)',
-        data: chartData.map(item => item[2]),
-        borderWidth: 1
-      }]
+      labels: chartData.map((item) => formatDate(item[0])),
+      datasets: [
+        {
+          label: '% tests passed (Firefox)',
+          data: chartData.map((item) => item[1]),
+          borderWidth: 1,
+        },
+        {
+          label: '% tests passed (Chrome)',
+          data: chartData.map((item) => item[2]),
+          borderWidth: 1,
+        },
+      ],
     },
     options: {
       plugins: {
         tooltip: {
           enabled: false,
-          external: externalTooltipHandler
-        }
+          external: externalTooltipHandler,
+        },
       },
       scales: {
         y: {
           beginAtZero: true,
           min: 0,
           ticks: {
-            callback: function(value, index, ticks) {
-                return value + '%';
-            }
-          }
-        }
-      }
-    }
+            callback: function (value, index, ticks) {
+              return value + '%';
+            },
+          },
+        },
+      },
+    },
   });
 
-  const elTime = document.querySelector('time');
+  const timeEl = document.querySelector('time');
   const date = formatDate(new Date());
-  elTime.textContent = date;
+  timeEl.textContent = date;
+
+  const deltaEl = document.querySelector('#delta');
+  const firefoxDelta = await fetch('./firefox-delta.json')
+    .then((res) => res.json())
+    .catch(() => {
+      delta: 'X';
+    });
+  deltaEl.textContent = firefoxDelta.delta;
 }
 
 main();

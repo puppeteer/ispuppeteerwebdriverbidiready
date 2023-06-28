@@ -1,12 +1,15 @@
 {
   "private": true,
   "scripts": {
-    "data": "node preprocess-data.js",
-    "build": "npm run data && rm -rf dist && mkdir -p dist && cp data.json dist/ && cp index.html dist/ && cp main.mjs dist/ && node build.js",
-    "start": "http-server --port 9001 ."
+    "data": "node preprocess-data.mjs",
+    "build": "npm run data && node build.mjs",
+    "build:dist": "rm -rf dist && mkdir -p dist && cp data.json dist/ && cp firefox-delta.json dist/ && cp index.html dist/ && cp main.mjs dist/",
+    "start": "http-server --port 9001 .",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
-    "http-server": "^0.12.3",
+    "http-server": "14.1.1",
+    "prettier": "2.8.8",
     "puppeteer": "19.6.3"
   }
 }
