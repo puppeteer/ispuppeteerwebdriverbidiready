@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "data": "node preprocess-data.mjs",
+    "data": "node preprocess-data.mjs && node firefox-delta.mjs",
     "build": "npm run data && node build.mjs",
     "build:dist": "rm -rf dist && mkdir -p dist && cp data.json dist/ && cp firefox-delta.json dist/ && cp index.html dist/ && cp main.mjs dist/",
     "start": "http-server --port 9001 .",
