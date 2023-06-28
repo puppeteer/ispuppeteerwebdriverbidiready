@@ -108,6 +108,10 @@ async function main() {
       tooltip.options.padding + 'px ' + tooltip.options.padding + 'px';
   };
 
+  if (window.innerWidth > 2000) {
+    Chart.defaults.font.size = 38;
+  }
+
   new Chart(ctx, {
     type: 'bar',
     data: {
