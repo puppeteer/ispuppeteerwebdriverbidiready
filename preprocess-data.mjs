@@ -65,4 +65,4 @@ for (const date of Array.from(groupByDate.keys()).sort()) {
 }
 
 writeFileSync('data.json', JSON.stringify(mappedData, null, 2));
-// console.log(mappedData);
+console.log(mappedData);
