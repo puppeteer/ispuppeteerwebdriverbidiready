@@ -15,22 +15,19 @@ PUPPETEER_PRODUCT=firefox node packages/puppeteer/install.js
 export CI=true
 
 cdp-firefox() {
-    npm run test -- --test-suite firefox-headless --no-coverage --save-stats-to ./stats.json
-    cp ./stats.json $CWD/data/firefox-cdp-$timestamp.json
+    npm run test -- --test-suite firefox-headless --no-coverage --save-stats-to $CWD/data/firefox-cdp-$timestamp.json
 }
 
 bidi-firefox() {
-  npm run test -- --test-suite firefox-bidi --no-coverage --save-stats-to ./stats.json
-  cp ./stats.json $CWD/data/firefox-$timestamp.json
+  npm run test -- --test-suite firefox-bidi --no-coverage --save-stats-to $CWD/data/firefox-$timestamp.json
 }
 
 bidi-chrome() {
   export PUPPETEER_EXECUTABLE_PATH=$(node tools/download_chrome_bidi.mjs ~/.cache/puppeteer/chrome-canary | tail -1)
-
-  npm run test -- --test-suite chrome-bidi --no-coverage --save-stats-to ./stats.json
-  cp ./stats.json $CWD/data/chrome-$timestamp.json
+  npm run test -- --test-suite chrome-bidi --no-coverage --save-stats-to $CWD/data/chrome-$timestamp.json
 }
 
-cdp-firefox
-bidi-firefox
-bidi-chrome
+cdp-firefox &
+bidi-firefox &
+bidi-chrome &
+wait
