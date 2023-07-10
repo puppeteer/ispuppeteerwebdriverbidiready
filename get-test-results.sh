@@ -23,11 +23,10 @@ bidi-firefox() {
 }
 
 bidi-chrome() {
-  export PUPPETEER_EXECUTABLE_PATH=$(node tools/download_chrome_bidi.mjs ~/.cache/puppeteer/chrome-canary | tail -1)
+  export PUPPETEER_EXECUTABLE_PATH=$(node tools/download_chrome_bidi.mjs ~/.cache/puppeteer/chrome-canary --shell)
   npm run test -- --test-suite chrome-bidi --no-coverage --save-stats-to $CWD/data/chrome-$timestamp.json
 }
 
-cdp-firefox &
-bidi-firefox &
-bidi-chrome &
-wait
+cdp-firefox
+bidi-firefox
+bidi-chrome
