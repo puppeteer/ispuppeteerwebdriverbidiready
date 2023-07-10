@@ -30,3 +30,5 @@ bidi-chrome() {
 cdp-firefox
 bidi-firefox
 bidi-chrome
+
+exit 0
