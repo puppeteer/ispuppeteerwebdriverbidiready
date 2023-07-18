@@ -160,7 +160,7 @@ async function main() {
     .catch(() => {
       delta: 'X';
     });
-  deltaEl.textContent = firefoxDelta.delta;
+  deltaEl.textContent = firefoxDelta.failing;
 }
 
 main();
