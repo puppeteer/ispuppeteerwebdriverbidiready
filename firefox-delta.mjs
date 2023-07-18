@@ -28,24 +28,19 @@ if (!existsSync(cdpFile)) {
 const cdpPassBiDiFailTest = [];
 const cdpFailBiDiPassTest = [];
 
-const biDiTests = JSON.parse(
-  readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8')
-).tests;
-const cdpTests = JSON.parse(readFileSync(cdpFile, 'utf-8')).tests;
-const tests = new Map();
-for (const test of cdpTests) {
-  tests.set(test.fullTitle, Object.keys(test.err).length === 0);
-}
+const biDiTests = JSON.parse(readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8')).tests;
+const passingBiDiTests = new Set(JSON.parse(readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8')).passes.map(p => p.fullTitle));
+const passingCdpTests = new Set(JSON.parse(readFileSync(cdpFile, 'utf-8')).passes.map(p => p.fullTitle));
 
 for (const test of biDiTests) {
-  const passedInCDP = tests.get(test.fullTitle);
-  if (passedInCDP && Object.keys(test.err).length !== 0) {
+  if (passingCdpTests.has(test.fullTitle) && !passingBiDiTests.has(test.fullTitle)) {
     cdpPassBiDiFailTest.push(test.fullTitle);
   }
-  if (!passedInCDP && Object.keys(test.err).length === 0) {
+  if (!passingCdpTests.has(test.fullTitle) && passingBiDiTests.has(test.fullTitle)) {
     cdpFailBiDiPassTest.push(test.fullTitle);
   }
 }
+
 const firefoxDelta = {
   failing: cdpPassBiDiFailTest.length,
   failingTests: cdpPassBiDiFailTest,
