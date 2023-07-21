@@ -49,3 +49,16 @@ const firefoxDelta = {
 };
 
 writeFileSync('firefox-delta.json', JSON.stringify(firefoxDelta, null, 2));
+
+const latestFirefoxTests = JSON.parse(readFileSync(`./data/firefox-${timestamp}.json`, 'utf-8'));
+const latestChromeTests = JSON.parse(readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8'));
+
+writeFileSync('firefox-failing.json', JSON.stringify({
+  failing: latestFirefoxTests.failures.map(t => t.fullTitle),
+  pending: latestFirefoxTests.pending.map(t => t.fullTitle),
+}, null, 2));
+
+writeFileSync('chrome-failing.json', JSON.stringify({
+  failing: latestChromeTests.failures.map(t => t.fullTitle),
+  pending: latestChromeTests.pending.map(t => t.fullTitle),
+}, null, 2));

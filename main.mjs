@@ -154,13 +154,33 @@ async function main() {
   const date = formatDate(new Date());
   timeEl.textContent = date;
 
-  const deltaEl = document.querySelector('#delta');
-  const firefoxDelta = await fetch('./firefox-delta.json')
+  document.querySelector('#delta').textContent = (await fetch('./firefox-delta.json')
     .then((res) => res.json())
     .catch(() => {
-      delta: 'X';
-    });
-  deltaEl.textContent = firefoxDelta.failing;
+      return {
+        failing: 'X',
+      }
+    })).failing;
+
+  const firefoxFailing = await fetch('./firefox-failing.json')
+    .then((res) => res.json())
+    .catch(() => {
+      return {
+        failing: [],
+        pending: [],
+      }
+    })
+  document.querySelector('#firefox-failing').textContent = firefoxFailing.failing.length + firefoxFailing.pending.length;
+
+  const chromeFailing = await fetch('./chrome-failing.json')
+    .then((res) => res.json())
+    .catch(() => {
+      return {
+        failing: [],
+        pending: [],
+      };
+    })
+  document.querySelector('#chrome-failing').textContent = chromeFailing.failing.length + chromeFailing.pending.length;
 }
 
 main();

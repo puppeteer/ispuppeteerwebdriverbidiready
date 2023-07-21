@@ -25,6 +25,16 @@ const server = createServer((req, res) => {
       res.end(readFileSync('./firefox-delta.json'));
       break;
     }
+    case '/firefox-failing.json': {
+      res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
+      res.end(readFileSync('./firefox-failing.json'));
+      break;
+    }
+    case '/chrome-failing.json': {
+      res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
+      res.end(readFileSync('./chrome-failing.json'));
+      break;
+    }
   }
 });
 
