@@ -21,7 +21,7 @@ const data = files
     const counts = {
       passing: stats.passes,
       failing: stats.failures,
-      skipping: 0, // stats.pending,
+      skipping: stats.pending,
       total: stats.tests,
     };
     counts.unsupported = 0; // counts.total - (counts.passing + counts.failing + counts.skipping);

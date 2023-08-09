@@ -31,6 +31,7 @@ async function main() {
   const entries = await response.json();
   const chartData = [];
   let prev = [];
+  const offset = new Date(new Date().getTime() - (24 * 60 * 60 * 1000) * 90); // 90 days ago
   for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts } = entry;
     if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing) {
@@ -44,7 +45,7 @@ async function main() {
       buildTooltip('Firefox', firefoxCounts),
       buildTooltip('Chrome', chromeCounts),
     ]);
-    if (chartData.length > 7) {
+    if (new Date(date) < offset) {
       break;
     }
   }
