@@ -11,7 +11,7 @@ cd puppeteer
 PUPPETEER_SKIP_DOWNLOAD=true npm ci
 npm run build -w @puppeteer-test/test
 
-PUPPETEER_PRODUCT=firefox node packages/puppeteer/install.js
+PUPPETEER_PRODUCT=firefox node packages/puppeteer/install.mjs
 export CI=true
 
 cdp-firefox() {
