@@ -26,12 +26,15 @@ function buildTooltip(label, counts) {
   `;
 }
 
-async function main() {
+async function createMainChart() {
   const response = await fetch('./data.json');
   const entries = await response.json();
+
   const chartData = [];
   let prev = [];
-  const offset = new Date(new Date().getTime() - (24 * 60 * 60 * 1000) * 90); // 90 days ago
+  const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
+
+  const index = 0;
   for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts } = entry;
     if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing) {
@@ -150,18 +153,103 @@ async function main() {
       },
     },
   });
+}
+
+async function createFirefoxDeltaChart() {
+  const response = await fetch('./firefox-delta-count.json');
+  const entries = await response.json();
+
+  const chartData = [];
+  let prev = [];
+  const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
+
+  const index = 0;
+  for (const entry of entries.reverse()) {
+    if (!entry) {
+      continue;
+    }
+    const { date, failing, passing } = entry;
+    chartData.push([new Date(date), failing, passing]);
+    if (new Date(date) < offset) {
+      break;
+    }
+  }
+
+  chartData.reverse();
+
+  const canvas = document.createElement('canvas');
+  const ctx = document.getElementById('chart');
+
+  if (window.innerWidth > 2000) {
+    Chart.defaults.font.size = 38;
+  }
+
+  const datasets = [
+    {
+      label: 'Tests failing with Firefox BiDi but passing with Firefox CDP',
+      shortLabel: 'Tests failing',
+      data: chartData.map((item) => item[1]),
+      borderWidth: 1,
+    },
+  ];
+
+  if (window.location.search.includes('firefox-delta-all')) {
+    // Optionally show the new tests passing with BiDi but not with CDP
+    datasets.push({
+      label: 'Tests passing with Firefox BiDi but failing with Firefox CDP',
+      shortLabel: 'Tests passing',
+      data: chartData.map((item) => item[2]),
+      borderWidth: 1,
+    });
+  }
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: chartData.map((item) => formatDate(item[0])),
+      datasets,
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label: (context) =>
+              context.dataset.shortLabel + ': ' + context.parsed.y,
+          },
+        },
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          min: 0,
+        },
+      },
+    },
+  });
+}
+
+async function main() {
+  // Add ?firefox-delta to the URL to see data focused on Firefox BiDi vs
+  // Firefox CDP.
+  if (window.location.search.includes('firefox-delta')) {
+    await createFirefoxDeltaChart();
+  } else {
+    await createMainChart();
+  }
 
   const timeEl = document.querySelector('time');
   const date = formatDate(new Date());
   timeEl.textContent = date;
 
-  document.querySelector('#delta').textContent = (await fetch('./firefox-delta.json')
-    .then((res) => res.json())
-    .catch(() => {
-      return {
-        failing: 'X',
-      }
-    })).failing;
+  document.querySelector('#delta').textContent = (
+    await fetch('./firefox-delta.json')
+      .then((res) => res.json())
+      .catch(() => {
+        return {
+          failing: 'X',
+        };
+      })
+  ).failing;
 
   const firefoxFailing = await fetch('./firefox-failing.json')
     .then((res) => res.json())
@@ -169,9 +257,10 @@ async function main() {
       return {
         failing: [],
         pending: [],
-      }
-    })
-  document.querySelector('#firefox-failing').textContent = firefoxFailing.failing.length + firefoxFailing.pending.length;
+      };
+    });
+  document.querySelector('#firefox-failing').textContent =
+    firefoxFailing.failing.length + firefoxFailing.pending.length;
 
   const chromeFailing = await fetch('./chrome-failing.json')
     .then((res) => res.json())
@@ -180,8 +269,9 @@ async function main() {
         failing: [],
         pending: [],
       };
-    })
-  document.querySelector('#chrome-failing').textContent = chromeFailing.failing.length + chromeFailing.pending.length;
+    });
+  document.querySelector('#chrome-failing').textContent =
+    chromeFailing.failing.length + chromeFailing.pending.length;
 }
 
 main();

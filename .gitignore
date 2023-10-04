@@ -1,5 +1,6 @@
 data.json
 firefox-delta.json
+firefox-delta-count.json
 firefox-failing.json
 chrome-failing.json
 dist
