@@ -26,10 +26,10 @@ function buildTooltip(label, counts) {
   `;
 }
 
-/**
- * Sort chart data entries by date, ascending.
- */
-function sortChartEntries(entries) {
+async function createMainChart() {
+  const response = await fetch('./data.json');
+  const entries = await response.json();
+
   const chartData = [];
   let prev = [];
   const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
@@ -54,13 +54,6 @@ function sortChartEntries(entries) {
   }
 
   chartData.reverse();
-  return chartData;
-}
-
-async function createMainChart() {
-  const response = await fetch('./data.json');
-  const entries = await response.json();
-  const chartData = sortChartEntries(entries);
 
   const ctx = document.getElementById('chart');
 
@@ -165,7 +158,24 @@ async function createMainChart() {
 async function createFirefoxDeltaChart() {
   const response = await fetch('./firefox-delta-count.json');
   const entries = await response.json();
-  const chartData = sortChartEntries(entries);
+
+  const chartData = [];
+  let prev = [];
+  const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
+
+  const index = 0;
+  for (const entry of entries.reverse()) {
+    if (!entry) {
+      continue;
+    }
+    const { date, failing, passing } = entry;
+    chartData.push([new Date(date), failing, passing]);
+    if (new Date(date) < offset) {
+      break;
+    }
+  }
+
+  chartData.reverse();
 
   const canvas = document.createElement('canvas');
   const ctx = document.getElementById('chart');
