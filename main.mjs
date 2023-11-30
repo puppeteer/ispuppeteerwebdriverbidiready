@@ -32,9 +32,8 @@ async function createMainChart() {
 
   const chartData = [];
   let prev = [];
-  const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
+  const offset = new Date(2023, 0, 1);
 
-  const index = 0;
   for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts } = entry;
     if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing) {
@@ -45,8 +44,8 @@ async function createMainChart() {
       new Date(date),
       (firefoxCounts.passing / firefoxCounts.total) * 100,
       (chromeCounts.passing / chromeCounts.total) * 100,
-      buildTooltip('Firefox', firefoxCounts),
-      buildTooltip('Chrome', chromeCounts),
+      buildTooltip('Firefox ' + new Date(date).toLocaleDateString(), firefoxCounts),
+      buildTooltip('Chrome ' + new Date(date).toLocaleDateString(), chromeCounts),
     ]);
     if (new Date(date) < offset) {
       break;
