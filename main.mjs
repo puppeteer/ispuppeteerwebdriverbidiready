@@ -159,10 +159,8 @@ async function createFirefoxDeltaChart() {
   const entries = await response.json();
 
   const chartData = [];
-  let prev = [];
-  const offset = new Date(new Date().getTime() - 24 * 60 * 60 * 1000 * 90); // 90 days ago
+  const offset = new Date(2023, 0, 1);
 
-  const index = 0;
   for (const entry of entries.reverse()) {
     if (!entry) {
       continue;
