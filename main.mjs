@@ -4,6 +4,10 @@ const pf = new Intl.NumberFormat('en', {
   maximumFractionDigits: 2,
 });
 
+const searchParams = new URLSearchParams(window.location.search);
+
+const startDate = searchParams.has('start-date') ? Date.parse(searchParams.get('start-date')) : new Date(new Date().getFullYear(), 0, 1);
+
 function formatPercentage(number) {
   return pf.format(number * 100);
 }
@@ -32,7 +36,6 @@ async function createMainChart() {
 
   const chartData = [];
   let prev = [];
-  const offset = new Date(2023, 0, 1);
 
   for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts } = entry;
@@ -47,7 +50,7 @@ async function createMainChart() {
       buildTooltip('Firefox ' + new Date(date).toLocaleDateString(), firefoxCounts),
       buildTooltip('Chrome ' + new Date(date).toLocaleDateString(), chromeCounts),
     ]);
-    if (new Date(date) < offset) {
+    if (new Date(date) < startDate) {
       break;
     }
   }
@@ -159,7 +162,6 @@ async function createFirefoxDeltaChart() {
   const entries = await response.json();
 
   const chartData = [];
-  const offset = new Date(2023, 0, 1);
 
   for (const entry of entries.reverse()) {
     if (!entry) {
@@ -167,7 +169,7 @@ async function createFirefoxDeltaChart() {
     }
     const { date, failing, passing } = entry;
     chartData.push([new Date(date), failing, passing]);
-    if (new Date(date) < offset) {
+    if (new Date(date) < startDate) {
       break;
     }
   }
