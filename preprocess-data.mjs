@@ -9,20 +9,27 @@ function getParts(file) {
   return parts;
 }
 
+const ignoredTests = new Set(JSON.parse(readFileSync('ignored-tests.json', 'utf-8')));
+
 const files = readdirSync('./data');
 const data = files
   .filter((file) => file.endsWith('.json') && !file.includes('cdp'))
   .sort()
   .map((file) => {
     const [browser, timestamp] = getParts(file);
-    const stats = JSON.parse(readFileSync(`./data/${file}`, 'utf-8')).stats;
+    let { pending, passes, failures } = JSON.parse(readFileSync(`./data/${file}`, 'utf-8'));
     // Since few tests are supported we don't report the skipped tests to make
     // sure the chart is readable.
+
+    const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
+    passes = passes.filter(filterIgnored);
+    failures = failures.filter(filterIgnored);
+    pending = pending.filter(filterIgnored);
     const counts = {
-      passing: stats.passes,
-      failing: stats.failures,
-      skipping: stats.pending,
-      total: stats.tests,
+      passing: passes.length,
+      failing: failures.length,
+      skipping: pending.length,
+      total: passes.length + failures.length + pending.length,
     };
     counts.unsupported = 0; // counts.total - (counts.passing + counts.failing + counts.skipping);
     return {
