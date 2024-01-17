@@ -146,6 +146,7 @@ async function createMainChart() {
         y: {
           beginAtZero: true,
           min: 0,
+          max: 100,
           ticks: {
             callback: function (value, index, ticks) {
               return value + '%';
