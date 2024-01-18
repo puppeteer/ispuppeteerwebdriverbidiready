@@ -59,8 +59,6 @@
   "Drag n' Drop should drop using mouse",
   "Drag n' Drop should drop",
   "Emulate idle state changing idle state emulation causes change of the IdleDetector state",
-  "Emulation Page.emulate should support clicking",
-  "Emulation Page.emulate should work",
   "Emulation Page.emulateCPUThrottling should change the CPU throttling rate successfully",
   "Emulation Page.emulateMediaFeatures should work",
   "Emulation Page.emulateMediaType should work",
