@@ -95,7 +95,6 @@
   "input tests Page.waitForFileChooser should work when file input is not attached to DOM",
   "input tests Page.waitForFileChooser should work with no timeout",
   "JSHandle Page.evaluateHandle should return the RemoteObject",
-  "Keyboard should send a character with sendCharacter in iframe",
   "Launcher specs Puppeteer Puppeteer.connect should be able to close remote browser",
   "Launcher specs Puppeteer Puppeteer.connect should be able to connect multiple times to the same browser",
   "Launcher specs Puppeteer Puppeteer.connect should be able to connect to a browser with no page targets",
