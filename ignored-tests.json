@@ -21,7 +21,6 @@
   "Accessibility should work",
   "Autofill ElementHandle.autofill should fill out a credit card",
   "Browser specs Browser.isConnected should set the browser connected state",
-  "Browser specs Browser.userAgent should include WebKit",
   "BrowserContext should work across sessions",
   "Chromium-Specific Launcher tests Puppeteer.launch |browserURL| option should be able to connect using browserUrl with and without trailing slash",
   "Chromium-Specific Launcher tests Puppeteer.launch |pipe| option should fire \"disconnected\" when closing with pipe",
