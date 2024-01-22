@@ -123,3 +123,27 @@ writeFileSync(
     2
   )
 );
+
+writeFileSync(
+  'firefox-failing-all.json',
+  JSON.stringify(
+    {
+      failing: latestFirefoxTests.failures.map((t) => t.fullTitle),
+      pending: latestFirefoxTests.pending.map((t) => t.fullTitle),
+    },
+    null,
+    2
+  )
+);
+
+writeFileSync(
+  'chrome-failing-all.json',
+  JSON.stringify(
+    {
+      failing: latestChromeTests.failures.map((t) => t.fullTitle),
+      pending: latestChromeTests.pending.map((t) => t.fullTitle),
+    },
+    null,
+    2
+  )
+);
