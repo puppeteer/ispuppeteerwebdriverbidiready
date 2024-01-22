@@ -30,8 +30,8 @@ function buildTooltip(label, counts) {
   `;
 }
 
-async function createMainChart() {
-  const response = await fetch('./data.json');
+async function createMainChart(showAllTests = false) {
+  const response = await fetch(showAllTests ? './data-all.json' : './data.json');
   const entries = await response.json();
 
   const chartData = [];
@@ -177,7 +177,6 @@ async function createFirefoxDeltaChart() {
 
   chartData.reverse();
 
-  const canvas = document.createElement('canvas');
   const ctx = document.getElementById('chart');
 
   if (window.innerWidth > 2000) {
@@ -193,7 +192,7 @@ async function createFirefoxDeltaChart() {
     },
   ];
 
-  if (window.location.search.includes('firefox-delta-all')) {
+  if (searchParams.has('firefox-delta-all')) {
     // Optionally show the new tests passing with BiDi but not with CDP
     datasets.push({
       label: 'Tests passing with Firefox BiDi but failing with Firefox CDP',
@@ -231,10 +230,15 @@ async function createFirefoxDeltaChart() {
 async function main() {
   // Add ?firefox-delta to the URL to see data focused on Firefox BiDi vs
   // Firefox CDP.
-  if (window.location.search.includes('firefox-delta')) {
+  if (searchParams.has('firefox-delta')) {
     await createFirefoxDeltaChart();
   } else {
-    await createMainChart();
+    await createMainChart(searchParams.has('all'));
+  }
+
+  if (searchParams.has('all')) {
+    document.querySelector('#ready').style.display = 'none';
+    document.querySelector('[href="#ready"]').style.display = 'none';
   }
 
   const timeEl = document.querySelector('time');
@@ -251,7 +255,7 @@ async function main() {
       })
   ).failing;
 
-  const firefoxFailing = await fetch('./firefox-failing.json')
+  const firefoxFailing = await fetch(searchParams.has('all') ? './firefox-failing-all.json' : './firefox-failing.json')
     .then((res) => res.json())
     .catch(() => {
       return {
@@ -262,7 +266,7 @@ async function main() {
   document.querySelector('#firefox-failing').textContent =
     firefoxFailing.failing.length + firefoxFailing.pending.length;
 
-  const chromeFailing = await fetch('./chrome-failing.json')
+  const chromeFailing = await fetch(searchParams.has('all') ? './chrome-failing-all.json' : './chrome-failing.json')
     .then((res) => res.json())
     .catch(() => {
       return {

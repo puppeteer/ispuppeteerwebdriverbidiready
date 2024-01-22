@@ -97,8 +97,35 @@ const latestChromeTests = JSON.parse(
   readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8')
 );
 
+const ignoredTests = new Set(JSON.parse(readFileSync('ignored-tests.json', 'utf-8')));
+const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
+
 writeFileSync(
   'firefox-failing.json',
+  JSON.stringify(
+    {
+      failing: latestFirefoxTests.failures.filter(filterIgnored).map((t) => t.fullTitle),
+      pending: latestFirefoxTests.pending.filter(filterIgnored).map((t) => t.fullTitle),
+    },
+    null,
+    2
+  )
+);
+
+writeFileSync(
+  'chrome-failing.json',
+  JSON.stringify(
+    {
+      failing: latestChromeTests.failures.filter(filterIgnored).map((t) => t.fullTitle),
+      pending: latestChromeTests.pending.filter(filterIgnored).map((t) => t.fullTitle),
+    },
+    null,
+    2
+  )
+);
+
+writeFileSync(
+  'firefox-failing-all.json',
   JSON.stringify(
     {
       failing: latestFirefoxTests.failures.map((t) => t.fullTitle),
@@ -110,7 +137,7 @@ writeFileSync(
 );
 
 writeFileSync(
-  'chrome-failing.json',
+  'chrome-failing-all.json',
   JSON.stringify(
     {
       failing: latestChromeTests.failures.map((t) => t.fullTitle),

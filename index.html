@@ -19,6 +19,9 @@
         text-align: center;
         font-size: 36px;
       }
+      h1 a {
+        text-decoration: none;
+      }
       @media screen and (min-width: 1900px) {
         h1 {
           font-size: 72px;
@@ -52,7 +55,7 @@
       }
     </style>
     <div id="main">
-      <h1>Is Puppeteer ready for WebDriver BiDi yet?</h1>
+      <h1>Is Puppeteer ready for WebDriver BiDi yet?<a href="#ready">*</a></h1>
       <div id="area">
         <canvas id="chart"></canvas>
       </div>
@@ -74,6 +77,11 @@
             href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/chrome-failing.json"
             ><span id="chrome-failing"></span> failing or skipped tests</a
           >.
+          <p id="ready">
+            * Includes tests deemed necessary for production-ready use of
+            WebDriver BiDi in Puppeteer.
+            <a id="all">See status for all tests</a>.
+          </p>
         </div>
         <div>
           <a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready"
@@ -94,6 +102,9 @@
         new Date(Date.now() - last365DaysInMS).toISOString()
       );
       document.querySelector('#last-12-month').href = url.toString();
+      const urlAll = new URL(window.location.href);
+      urlAll.searchParams.set('all', true);
+      document.querySelector('#all').href = urlAll.toString();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
