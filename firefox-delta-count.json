@@ -1,0 +1,1552 @@
+[
+  {
+    "failing": 196,
+    "passing": 30,
+    "date": 1687956391000
+  },
+  {
+    "failing": 196,
+    "passing": 29,
+    "date": 1687957731000
+  },
+  {
+    "failing": 196,
+    "passing": 29,
+    "date": 1687961107000
+  },
+  {
+    "failing": 195,
+    "passing": 30,
+    "date": 1688012741000
+  },
+  {
+    "failing": 193,
+    "passing": 30,
+    "date": 1688099118000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1688185525000
+  },
+  {
+    "failing": 194,
+    "passing": 31,
+    "date": 1688271897000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1688377315000
+  },
+  {
+    "failing": 192,
+    "passing": 32,
+    "date": 1688444759000
+  },
+  {
+    "failing": 192,
+    "passing": 32,
+    "date": 1688531191000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1688547699000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1688617579000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1688703937000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1688790316000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1688876723000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1688963135000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1688989435000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1689049546000
+  },
+  {
+    "failing": 191,
+    "passing": 31,
+    "date": 1689135928000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1689222325000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1689308737000
+  },
+  {
+    "failing": 193,
+    "passing": 32,
+    "date": 1689395127000
+  },
+  {
+    "failing": 193,
+    "passing": 31,
+    "date": 1689481505000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1689567957000
+  },
+  {
+    "failing": 192,
+    "passing": 31,
+    "date": 1689654287000
+  },
+  {
+    "failing": 195,
+    "passing": 32,
+    "date": 1689689036000
+  },
+  {
+    "failing": 190,
+    "passing": 30,
+    "date": 1689698756000
+  },
+  {
+    "failing": 181,
+    "passing": 30,
+    "date": 1689707661000
+  },
+  {
+    "failing": 172,
+    "passing": 29,
+    "date": 1689740775000
+  },
+  {
+    "failing": 176,
+    "passing": 30,
+    "date": 1689827045000
+  },
+  {
+    "failing": 164,
+    "passing": 30,
+    "date": 1689913442000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1689933160000
+  },
+  {
+    "failing": 164,
+    "passing": 30,
+    "date": 1689941115000
+  },
+  {
+    "failing": 164,
+    "passing": 30,
+    "date": 1689999817000
+  },
+  {
+    "failing": 164,
+    "passing": 30,
+    "date": 1690086216000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1690172646000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1690259054000
+  },
+  {
+    "failing": 168,
+    "passing": 29,
+    "date": 1690345406000
+  },
+  {
+    "failing": 170,
+    "passing": 29,
+    "date": 1690431805000
+  },
+  {
+    "failing": 174,
+    "passing": 29,
+    "date": 1690518201000
+  },
+  {
+    "failing": 167,
+    "passing": 29,
+    "date": 1690604581000
+  },
+  {
+    "failing": 166,
+    "passing": 29,
+    "date": 1690690983000
+  },
+  {
+    "failing": 167,
+    "passing": 29,
+    "date": 1690777438000
+  },
+  {
+    "failing": 166,
+    "passing": 29,
+    "date": 1690863850000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1690899672000
+  },
+  {
+    "failing": 164,
+    "passing": 30,
+    "date": 1690950206000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1691036609000
+  },
+  {
+    "failing": 165,
+    "passing": 30,
+    "date": 1691123005000
+  },
+  {
+    "failing": 164,
+    "passing": 31,
+    "date": 1691209405000
+  },
+  {
+    "failing": 163,
+    "passing": 31,
+    "date": 1691295785000
+  },
+  {
+    "failing": 164,
+    "passing": 31,
+    "date": 1691382224000
+  },
+  {
+    "failing": 157,
+    "passing": 32,
+    "date": 1691468609000
+  },
+  {
+    "failing": 158,
+    "passing": 32,
+    "date": 1691555034000
+  },
+  {
+    "failing": 158,
+    "passing": 34,
+    "date": 1691580551000
+  },
+  {
+    "failing": 158,
+    "passing": 34,
+    "date": 1691641437000
+  },
+  {
+    "failing": 159,
+    "passing": 34,
+    "date": 1691727809000
+  },
+  {
+    "failing": 159,
+    "passing": 34,
+    "date": 1691814188000
+  },
+  {
+    "failing": 160,
+    "passing": 34,
+    "date": 1691900577000
+  },
+  {
+    "failing": 159,
+    "passing": 34,
+    "date": 1691987007000
+  },
+  {
+    "failing": 158,
+    "passing": 34,
+    "date": 1692073402000
+  },
+  {
+    "failing": 158,
+    "passing": 34,
+    "date": 1692159825000
+  },
+  {
+    "failing": 158,
+    "passing": 34,
+    "date": 1692246210000
+  },
+  {
+    "failing": 164,
+    "passing": 34,
+    "date": 1692332610000
+  },
+  {
+    "failing": 126,
+    "passing": 35,
+    "date": 1692347409000
+  },
+  {
+    "failing": 124,
+    "passing": 35,
+    "date": 1692419018000
+  },
+  {
+    "failing": 126,
+    "passing": 35,
+    "date": 1692505387000
+  },
+  {
+    "failing": 125,
+    "passing": 35,
+    "date": 1692591811000
+  },
+  {
+    "failing": 124,
+    "passing": 35,
+    "date": 1692678200000
+  },
+  {
+    "failing": 125,
+    "passing": 35,
+    "date": 1692764617000
+  },
+  {
+    "failing": 113,
+    "passing": 40,
+    "date": 1692805461000
+  },
+  {
+    "failing": 113,
+    "passing": 40,
+    "date": 1692851006000
+  },
+  {
+    "failing": 109,
+    "passing": 40,
+    "date": 1692901981000
+  },
+  {
+    "failing": 108,
+    "passing": 40,
+    "date": 1692937416000
+  },
+  {
+    "failing": 109,
+    "passing": 40,
+    "date": 1693023784000
+  },
+  {
+    "failing": 109,
+    "passing": 40,
+    "date": 1693110194000
+  },
+  {
+    "failing": 108,
+    "passing": 40,
+    "date": 1693196621000
+  },
+  {
+    "failing": 113,
+    "passing": 40,
+    "date": 1693283016000
+  },
+  {
+    "failing": 108,
+    "passing": 42,
+    "date": 1693298308000
+  },
+  {
+    "failing": 109,
+    "passing": 42,
+    "date": 1693330649000
+  },
+  {
+    "failing": 114,
+    "passing": 42,
+    "date": 1693369429000
+  },
+  {
+    "failing": 116,
+    "passing": 42,
+    "date": 1693455818000
+  },
+  {
+    "failing": 115,
+    "passing": 42,
+    "date": 1693542230000
+  },
+  {
+    "failing": 115,
+    "passing": 44,
+    "date": 1693628608000
+  },
+  {
+    "failing": 116,
+    "passing": 44,
+    "date": 1693714999000
+  },
+  {
+    "failing": 115,
+    "passing": 44,
+    "date": 1693801423000
+  },
+  {
+    "failing": 115,
+    "passing": 44,
+    "date": 1693974228000
+  },
+  {
+    "failing": 115,
+    "passing": 45,
+    "date": 1694060630000
+  },
+  {
+    "failing": 114,
+    "passing": 45,
+    "date": 1694071917000
+  },
+  {
+    "failing": 113,
+    "passing": 45,
+    "date": 1694147033000
+  },
+  {
+    "failing": 113,
+    "passing": 45,
+    "date": 1694233401000
+  },
+  {
+    "failing": 112,
+    "passing": 45,
+    "date": 1694319807000
+  },
+  {
+    "failing": 113,
+    "passing": 45,
+    "date": 1694406232000
+  },
+  {
+    "failing": 113,
+    "passing": 45,
+    "date": 1694448691000
+  },
+  {
+    "failing": 111,
+    "passing": 45,
+    "date": 1694492613000
+  },
+  {
+    "failing": 107,
+    "passing": 46,
+    "date": 1694530707000
+  },
+  {
+    "failing": 107,
+    "passing": 46,
+    "date": 1694579029000
+  },
+  {
+    "failing": 106,
+    "passing": 46,
+    "date": 1694665417000
+  },
+  {
+    "failing": 106,
+    "passing": 46,
+    "date": 1694751829000
+  },
+  {
+    "failing": 106,
+    "passing": 46,
+    "date": 1694838206000
+  },
+  {
+    "failing": 107,
+    "passing": 46,
+    "date": 1694924592000
+  },
+  {
+    "failing": 107,
+    "passing": 46,
+    "date": 1695011131000
+  },
+  {
+    "failing": 106,
+    "passing": 46,
+    "date": 1695097458000
+  },
+  {
+    "failing": 105,
+    "passing": 46,
+    "date": 1695183832000
+  },
+  {
+    "failing": 97,
+    "passing": 53,
+    "date": 1695270226000
+  },
+  {
+    "failing": 92,
+    "passing": 55,
+    "date": 1695356616000
+  },
+  {
+    "failing": 94,
+    "passing": 52,
+    "date": 1695625481000
+  },
+  {
+    "failing": 94,
+    "passing": 52,
+    "date": 1695702233000
+  },
+  {
+    "failing": 85,
+    "passing": 52,
+    "date": 1695719309000
+  },
+  {
+    "failing": 80,
+    "passing": 55,
+    "date": 1695788631000
+  },
+  {
+    "failing": 81,
+    "passing": 55,
+    "date": 1695875026000
+  },
+  {
+    "failing": 81,
+    "passing": 55,
+    "date": 1695961427000
+  },
+  {
+    "failing": 78,
+    "passing": 55,
+    "date": 1696047840000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696134215000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696220644000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696307035000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696393441000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696416681000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696479828000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696566233000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696652606000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696739015000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696825438000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1696911822000
+  },
+  {
+    "failing": 72,
+    "passing": 53,
+    "date": 1696998222000
+  },
+  {
+    "failing": 72,
+    "passing": 53,
+    "date": 1697009648000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1697022339000
+  },
+  {
+    "failing": 79,
+    "passing": 55,
+    "date": 1697030867000
+  },
+  {
+    "failing": 78,
+    "passing": 54,
+    "date": 1697084638000
+  },
+  {
+    "failing": 78,
+    "passing": 54,
+    "date": 1697171039000
+  },
+  {
+    "failing": 78,
+    "passing": 54,
+    "date": 1697257415000
+  },
+  {
+    "failing": 78,
+    "passing": 54,
+    "date": 1697343818000
+  },
+  {
+    "failing": 78,
+    "passing": 54,
+    "date": 1697430253000
+  },
+  {
+    "failing": 79,
+    "passing": 54,
+    "date": 1697516641000
+  },
+  {
+    "failing": 79,
+    "passing": 54,
+    "date": 1697603038000
+  },
+  {
+    "failing": 79,
+    "passing": 54,
+    "date": 1697689436000
+  },
+  {
+    "failing": 87,
+    "passing": 51,
+    "date": 1697775836000
+  },
+  {
+    "failing": 88,
+    "passing": 51,
+    "date": 1697862218000
+  },
+  {
+    "failing": 87,
+    "passing": 51,
+    "date": 1697948612000
+  },
+  {
+    "failing": 88,
+    "passing": 51,
+    "date": 1698035044000
+  },
+  {
+    "failing": 88,
+    "passing": 51,
+    "date": 1698121422000
+  },
+  {
+    "failing": 87,
+    "passing": 58,
+    "date": 1698207849000
+  },
+  {
+    "failing": 87,
+    "passing": 58,
+    "date": 1698294215000
+  },
+  {
+    "failing": 84,
+    "passing": 59,
+    "date": 1698380628000
+  },
+  {
+    "failing": 74,
+    "passing": 62,
+    "date": 1698467023000
+  },
+  {
+    "failing": 74,
+    "passing": 62,
+    "date": 1698553405000
+  },
+  {
+    "failing": 74,
+    "passing": 62,
+    "date": 1698639845000
+  },
+  {
+    "failing": 75,
+    "passing": 64,
+    "date": 1698726237000
+  },
+  {
+    "failing": 72,
+    "passing": 65,
+    "date": 1698812640000
+  },
+  {
+    "failing": 72,
+    "passing": 65,
+    "date": 1698899042000
+  },
+  {
+    "failing": 72,
+    "passing": 65,
+    "date": 1698985446000
+  },
+  {
+    "failing": 72,
+    "passing": 65,
+    "date": 1699071831000
+  },
+  {
+    "failing": 72,
+    "passing": 65,
+    "date": 1699158222000
+  },
+  {
+    "failing": 71,
+    "passing": 65,
+    "date": 1699244666000
+  },
+  {
+    "failing": 71,
+    "passing": 65,
+    "date": 1699331046000
+  },
+  {
+    "failing": 71,
+    "passing": 65,
+    "date": 1699417445000
+  },
+  {
+    "failing": 62,
+    "passing": 76,
+    "date": 1699503838000
+  },
+  {
+    "failing": 61,
+    "passing": 76,
+    "date": 1699590243000
+  },
+  {
+    "failing": 62,
+    "passing": 76,
+    "date": 1699676637000
+  },
+  {
+    "failing": 62,
+    "passing": 76,
+    "date": 1699763023000
+  },
+  {
+    "failing": 63,
+    "passing": 76,
+    "date": 1699849463000
+  },
+  {
+    "failing": 63,
+    "passing": 87,
+    "date": 1699935839000
+  },
+  {
+    "failing": 62,
+    "passing": 87,
+    "date": 1700022264000
+  },
+  {
+    "failing": 60,
+    "passing": 87,
+    "date": 1700108694000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700195083000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700281461000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700367851000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700454299000
+  },
+  {
+    "failing": 61,
+    "passing": 82,
+    "date": 1700540690000
+  },
+  {
+    "failing": 59,
+    "passing": 82,
+    "date": 1700627091000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700713488000
+  },
+  {
+    "failing": 60,
+    "passing": 82,
+    "date": 1700799863000
+  },
+  {
+    "failing": 61,
+    "passing": 82,
+    "date": 1700886253000
+  },
+  {
+    "failing": 61,
+    "passing": 82,
+    "date": 1700972643000
+  },
+  {
+    "failing": 59,
+    "passing": 82,
+    "date": 1701059077000
+  },
+  {
+    "failing": 59,
+    "passing": 83,
+    "date": 1701145474000
+  },
+  {
+    "failing": 60,
+    "passing": 83,
+    "date": 1701231874000
+  },
+  {
+    "failing": 60,
+    "passing": 83,
+    "date": 1701318284000
+  },
+  {
+    "failing": 60,
+    "passing": 83,
+    "date": 1701334843000
+  },
+  {
+    "failing": 58,
+    "passing": 83,
+    "date": 1701404692000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701424923000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701491040000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701577437000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701663878000
+  },
+  {
+    "failing": 55,
+    "passing": 83,
+    "date": 1701750279000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701836694000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1701923090000
+  },
+  {
+    "failing": 56,
+    "passing": 83,
+    "date": 1702009481000
+  },
+  {
+    "failing": 57,
+    "passing": 84,
+    "date": 1702095861000
+  },
+  {
+    "failing": 57,
+    "passing": 84,
+    "date": 1702182259000
+  },
+  {
+    "failing": 56,
+    "passing": 84,
+    "date": 1702268704000
+  },
+  {
+    "failing": 56,
+    "passing": 84,
+    "date": 1702355077000
+  },
+  {
+    "failing": 55,
+    "passing": 84,
+    "date": 1702441493000
+  },
+  {
+    "failing": 56,
+    "passing": 84,
+    "date": 1702527887000
+  },
+  {
+    "failing": 54,
+    "passing": 84,
+    "date": 1702614282000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1702700662000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1702787063000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1702873496000
+  },
+  {
+    "failing": 53,
+    "passing": 86,
+    "date": 1703046149000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703132680000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703219074000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1703305482000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703391845000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703478270000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703564677000
+  },
+  {
+    "failing": 53,
+    "passing": 86,
+    "date": 1703651052000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1703737469000
+  },
+  {
+    "failing": 53,
+    "passing": 86,
+    "date": 1703823852000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1703910280000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1703996667000
+  },
+  {
+    "failing": 55,
+    "passing": 86,
+    "date": 1704083083000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1704169471000
+  },
+  {
+    "failing": 54,
+    "passing": 86,
+    "date": 1704255874000
+  },
+  {
+    "failing": 53,
+    "passing": 86,
+    "date": 1704342280000
+  },
+  {
+    "failing": 54,
+    "passing": 87,
+    "date": 1704358421000
+  },
+  {
+    "failing": 51,
+    "passing": 87,
+    "date": 1704428689000
+  },
+  {
+    "failing": 52,
+    "passing": 87,
+    "date": 1704515067000
+  },
+  {
+    "failing": 52,
+    "passing": 87,
+    "date": 1704601475000
+  },
+  {
+    "failing": 52,
+    "passing": 87,
+    "date": 1704687907000
+  },
+  {
+    "failing": 50,
+    "passing": 87,
+    "date": 1704774288000
+  },
+  {
+    "failing": 53,
+    "passing": 87,
+    "date": 1704860706000
+  },
+  {
+    "failing": 51,
+    "passing": 87,
+    "date": 1704947098000
+  },
+  {
+    "failing": 52,
+    "passing": 87,
+    "date": 1704966795000
+  },
+  {
+    "failing": 50,
+    "passing": 99,
+    "date": 1705033505000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705119887000
+  },
+  {
+    "failing": 51,
+    "passing": 99,
+    "date": 1705206269000
+  },
+  {
+    "failing": 52,
+    "passing": 99,
+    "date": 1705292705000
+  },
+  {
+    "failing": 50,
+    "passing": 99,
+    "date": 1705379101000
+  },
+  {
+    "failing": 52,
+    "passing": 99,
+    "date": 1705465509000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705482990000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705526045000
+  },
+  {
+    "failing": 52,
+    "passing": 99,
+    "date": 1705551878000
+  },
+  {
+    "failing": 52,
+    "passing": 99,
+    "date": 1705638305000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705724687000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705811062000
+  },
+  {
+    "failing": 53,
+    "passing": 99,
+    "date": 1705897527000
+  },
+  {
+    "failing": 52,
+    "passing": 100,
+    "date": 1706010289000
+  },
+  {
+    "failing": 52,
+    "passing": 100,
+    "date": 1706070319000
+  },
+  {
+    "failing": 51,
+    "passing": 101,
+    "date": 1706156713000
+  },
+  {
+    "failing": 51,
+    "passing": 101,
+    "date": 1706243088000
+  },
+  {
+    "failing": 53,
+    "passing": 101,
+    "date": 1706329381000
+  },
+  {
+    "failing": 53,
+    "passing": 101,
+    "date": 1706415808000
+  },
+  {
+    "failing": 53,
+    "passing": 101,
+    "date": 1706502210000
+  },
+  {
+    "failing": 53,
+    "passing": 101,
+    "date": 1706588595000
+  },
+  {
+    "failing": 53,
+    "passing": 102,
+    "date": 1706675030000
+  },
+  {
+    "failing": 60,
+    "passing": 99,
+    "date": 1706761465000
+  },
+  {
+    "failing": 60,
+    "passing": 99,
+    "date": 1706847845000
+  },
+  {
+    "failing": 60,
+    "passing": 100,
+    "date": 1706878181000
+  },
+  {
+    "failing": 61,
+    "passing": 100,
+    "date": 1706934182000
+  },
+  {
+    "failing": 61,
+    "passing": 101,
+    "date": 1707020583000
+  },
+  {
+    "failing": 61,
+    "passing": 101,
+    "date": 1707107111000
+  },
+  {
+    "failing": 62,
+    "passing": 98,
+    "date": 1707132907000
+  },
+  {
+    "failing": 60,
+    "passing": 99,
+    "date": 1707193397000
+  },
+  {
+    "failing": 60,
+    "passing": 99,
+    "date": 1707279822000
+  },
+  {
+    "failing": 58,
+    "passing": 97,
+    "date": 1707366243000
+  },
+  {
+    "failing": 55,
+    "passing": 99,
+    "date": 1707452602000
+  },
+  {
+    "failing": 54,
+    "passing": 98,
+    "date": 1707539047000
+  },
+  {
+    "failing": 55,
+    "passing": 98,
+    "date": 1707625425000
+  },
+  {
+    "failing": 54,
+    "passing": 98,
+    "date": 1707711833000
+  },
+  {
+    "failing": 61,
+    "passing": 96,
+    "date": 1707798203000
+  },
+  {
+    "failing": 61,
+    "passing": 95,
+    "date": 1707884635000
+  },
+  {
+    "failing": 48,
+    "passing": 101,
+    "date": 1707971038000
+  },
+  {
+    "failing": 44,
+    "passing": 107,
+    "date": 1708057395000
+  },
+  {
+    "failing": 45,
+    "passing": 107,
+    "date": 1708143894000
+  },
+  {
+    "failing": 45,
+    "passing": 108,
+    "date": 1708230192000
+  },
+  {
+    "failing": 45,
+    "passing": 108,
+    "date": 1708316634000
+  },
+  {
+    "failing": 45,
+    "passing": 109,
+    "date": 1708403104000
+  },
+  {
+    "failing": 45,
+    "passing": 108,
+    "date": 1708489413000
+  },
+  {
+    "failing": 44,
+    "passing": 109,
+    "date": 1708575785000
+  },
+  {
+    "failing": 45,
+    "passing": 109,
+    "date": 1708662186000
+  },
+  {
+    "failing": 44,
+    "passing": 109,
+    "date": 1708680025000
+  },
+  {
+    "failing": 44,
+    "passing": 108,
+    "date": 1708748607000
+  },
+  {
+    "failing": 44,
+    "passing": 108,
+    "date": 1708835059000
+  },
+  {
+    "failing": 44,
+    "passing": 109,
+    "date": 1708921463000
+  },
+  {
+    "failing": 44,
+    "passing": 110,
+    "date": 1708953095000
+  },
+  {
+    "failing": 44,
+    "passing": 110,
+    "date": 1709007814000
+  },
+  {
+    "failing": 44,
+    "passing": 109,
+    "date": 1709094248000
+  },
+  {
+    "failing": 44,
+    "passing": 107,
+    "date": 1709180605000
+  },
+  {
+    "failing": 44,
+    "passing": 106,
+    "date": 1709267059000
+  },
+  {
+    "failing": 44,
+    "passing": 107,
+    "date": 1709353425000
+  },
+  {
+    "failing": 44,
+    "passing": 106,
+    "date": 1709439842000
+  },
+  {
+    "failing": 44,
+    "passing": 106,
+    "date": 1709526754000
+  },
+  {
+    "failing": 43,
+    "passing": 107,
+    "date": 1709612663000
+  },
+  {
+    "failing": 43,
+    "passing": 107,
+    "date": 1709699003000
+  },
+  {
+    "failing": 43,
+    "passing": 106,
+    "date": 1709785399000
+  },
+  {
+    "failing": 42,
+    "passing": 107,
+    "date": 1709871816000
+  },
+  {
+    "failing": 42,
+    "passing": 106,
+    "date": 1709958181000
+  },
+  {
+    "failing": 43,
+    "passing": 107,
+    "date": 1710044650000
+  },
+  {
+    "failing": 43,
+    "passing": 107,
+    "date": 1710131067000
+  },
+  {
+    "failing": 43,
+    "passing": 107,
+    "date": 1710217510000
+  },
+  {
+    "failing": 43,
+    "passing": 110,
+    "date": 1710303811000
+  },
+  {
+    "failing": 40,
+    "passing": 112,
+    "date": 1710390207000
+  },
+  {
+    "failing": 40,
+    "passing": 111,
+    "date": 1710476652000
+  },
+  {
+    "failing": 41,
+    "passing": 114,
+    "date": 1710563087000
+  },
+  {
+    "failing": 41,
+    "passing": 114,
+    "date": 1710649413000
+  },
+  {
+    "failing": 39,
+    "passing": 114,
+    "date": 1710735806000
+  },
+  {
+    "failing": 40,
+    "passing": 113,
+    "date": 1710822224000
+  },
+  {
+    "failing": 40,
+    "passing": 114,
+    "date": 1710842843000
+  },
+  {
+    "failing": 39,
+    "passing": 114,
+    "date": 1710908674000
+  },
+  {
+    "failing": 39,
+    "passing": 116,
+    "date": 1710995091000
+  },
+  {
+    "failing": 40,
+    "passing": 142,
+    "date": 1711081400000
+  },
+  {
+    "failing": 41,
+    "passing": 143,
+    "date": 1711167855000
+  },
+  {
+    "failing": 40,
+    "passing": 143,
+    "date": 1711254290000
+  },
+  {
+    "failing": 39,
+    "passing": 142,
+    "date": 1711340687000
+  },
+  {
+    "failing": 151,
+    "passing": 101,
+    "date": 1711427045000
+  },
+  {
+    "failing": 152,
+    "passing": 100,
+    "date": 1711447964000
+  },
+  {
+    "failing": 40,
+    "passing": 143,
+    "date": 1711459548000
+  },
+  {
+    "failing": 40,
+    "passing": 142,
+    "date": 1711513518000
+  },
+  {
+    "failing": 38,
+    "passing": 143,
+    "date": 1711599806000
+  },
+  {
+    "failing": 38,
+    "passing": 142,
+    "date": 1711623149000
+  },
+  {
+    "failing": 38,
+    "passing": 142,
+    "date": 1711631179000
+  }
+]
