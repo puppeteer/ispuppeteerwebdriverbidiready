@@ -6,7 +6,9 @@ const pf = new Intl.NumberFormat('en', {
 
 const searchParams = new URLSearchParams(window.location.search);
 
-const startDate = searchParams.has('start-date') ? Date.parse(searchParams.get('start-date')) : new Date(new Date().getFullYear(), 0, 1);
+const startDate = searchParams.has('start-date')
+  ? Date.parse(searchParams.get('start-date'))
+  : new Date(new Date().getFullYear(), 0, 1);
 
 function formatPercentage(number) {
   return pf.format(number * 100);
@@ -22,8 +24,8 @@ function buildTooltip(label, counts) {
       <h3 style="margin: 0;">${label}</h3>
       <div>Total: ${counts.total}</div>
       <div>Passing: ${counts.passing} (${formatPercentage(
-    counts.passing / counts.total
-  )})</div>
+        counts.passing / counts.total,
+      )})</div>
       <div>Skipping: ${counts.skipping}</div>
       <div>Failing: ${counts.failing}</div>
     </div>
@@ -31,7 +33,9 @@ function buildTooltip(label, counts) {
 }
 
 async function createMainChart(showAllTests = false) {
-  const response = await fetch(showAllTests ? './data-all.json' : './data.json');
+  const response = await fetch(
+    showAllTests ? './data-all.json' : './data.json',
+  );
   const entries = await response.json();
 
   const chartData = [];
@@ -47,8 +51,14 @@ async function createMainChart(showAllTests = false) {
       new Date(date),
       (firefoxCounts.passing / firefoxCounts.total) * 100,
       (chromeCounts.passing / chromeCounts.total) * 100,
-      buildTooltip('Firefox ' + new Date(date).toLocaleDateString(), firefoxCounts),
-      buildTooltip('Chrome ' + new Date(date).toLocaleDateString(), chromeCounts),
+      buildTooltip(
+        'Firefox ' + new Date(date).toLocaleDateString(),
+        firefoxCounts,
+      ),
+      buildTooltip(
+        'Chrome ' + new Date(date).toLocaleDateString(),
+        chromeCounts,
+      ),
     ]);
     if (new Date(date) < startDate) {
       break;
@@ -255,7 +265,11 @@ async function main() {
       })
   ).failing;
 
-  const firefoxFailing = await fetch(searchParams.has('all') ? './firefox-failing-all.json' : './firefox-failing.json')
+  const firefoxFailing = await fetch(
+    searchParams.has('all')
+      ? './firefox-failing-all.json'
+      : './firefox-failing.json',
+  )
     .then((res) => res.json())
     .catch(() => {
       return {
@@ -266,7 +280,11 @@ async function main() {
   document.querySelector('#firefox-failing').textContent =
     firefoxFailing.failing.length + firefoxFailing.pending.length;
 
-  const chromeFailing = await fetch(searchParams.has('all') ? './chrome-failing-all.json' : './chrome-failing.json')
+  const chromeFailing = await fetch(
+    searchParams.has('all')
+      ? './chrome-failing-all.json'
+      : './chrome-failing.json',
+  )
     .then((res) => res.json())
     .catch(() => {
       return {

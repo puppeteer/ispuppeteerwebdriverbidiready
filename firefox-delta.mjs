@@ -15,7 +15,7 @@ const data = files
     (file) =>
       file.endsWith('.json') &&
       file.includes('firefox') &&
-      !file.includes('cdp')
+      !file.includes('cdp'),
   )
   .sort()
   .map((file, index) => {
@@ -29,15 +29,15 @@ const data = files
     const cdpFailBiDiPassTest = [];
 
     const biDiTests = JSON.parse(
-      readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8')
+      readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8'),
     ).tests;
     const passingBiDiTests = new Set(
       JSON.parse(
-        readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8')
-      ).passes.map((p) => p.fullTitle)
+        readFileSync(`./data/${browser}-${timestamp}.json`, 'utf-8'),
+      ).passes.map((p) => p.fullTitle),
     );
     const passingCdpTests = new Set(
-      JSON.parse(readFileSync(cdpFile, 'utf-8')).passes.map((p) => p.fullTitle)
+      JSON.parse(readFileSync(cdpFile, 'utf-8')).passes.map((p) => p.fullTitle),
     );
 
     for (const test of biDiTests) {
@@ -84,44 +84,54 @@ const latestFirefox = files
     (file) =>
       file.endsWith('.json') &&
       file.includes('firefox') &&
-      !file.includes('cdp')
+      !file.includes('cdp'),
   )
   .sort()
   .at(-1);
 
 const timestamp = getParts(latestFirefox)[1];
 const latestFirefoxTests = JSON.parse(
-  readFileSync(`./data/firefox-${timestamp}.json`, 'utf-8')
+  readFileSync(`./data/firefox-${timestamp}.json`, 'utf-8'),
 );
 const latestChromeTests = JSON.parse(
-  readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8')
+  readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8'),
 );
 
-const ignoredTests = new Set(JSON.parse(readFileSync('ignored-tests.json', 'utf-8')));
+const ignoredTests = new Set(
+  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
+);
 const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
 
 writeFileSync(
   'firefox-failing.json',
   JSON.stringify(
     {
-      failing: latestFirefoxTests.failures.filter(filterIgnored).map((t) => t.fullTitle),
-      pending: latestFirefoxTests.pending.filter(filterIgnored).map((t) => t.fullTitle),
+      failing: latestFirefoxTests.failures
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
+      pending: latestFirefoxTests.pending
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
     },
     null,
-    2
-  )
+    2,
+  ),
 );
 
 writeFileSync(
   'chrome-failing.json',
   JSON.stringify(
     {
-      failing: latestChromeTests.failures.filter(filterIgnored).map((t) => t.fullTitle),
-      pending: latestChromeTests.pending.filter(filterIgnored).map((t) => t.fullTitle),
+      failing: latestChromeTests.failures
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
+      pending: latestChromeTests.pending
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
     },
     null,
-    2
-  )
+    2,
+  ),
 );
 
 writeFileSync(
@@ -132,8 +142,8 @@ writeFileSync(
       pending: latestFirefoxTests.pending.map((t) => t.fullTitle),
     },
     null,
-    2
-  )
+    2,
+  ),
 );
 
 writeFileSync(
@@ -144,6 +154,6 @@ writeFileSync(
       pending: latestChromeTests.pending.map((t) => t.fullTitle),
     },
     null,
-    2
-  )
+    2,
+  ),
 );

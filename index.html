@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -99,7 +99,7 @@
       const last365DaysInMS = 365 * 24 * 60 * 60 * 1000;
       url.searchParams.set(
         'start-date',
-        new Date(Date.now() - last365DaysInMS).toISOString()
+        new Date(Date.now() - last365DaysInMS).toISOString(),
       );
       document.querySelector('#last-12-month').href = url.toString();
       const urlAll = new URL(window.location.href);

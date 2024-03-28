@@ -6,7 +6,7 @@ import { start, stop } from './server.mjs';
 async function createScreenshot() {
   const browser = await launch();
   const page = await browser.newPage();
-  page.on('error', e => console.log(e))
+  page.on('error', (e) => console.log(e));
   await start(9001);
   await page.setViewport({
     width: 3840,

@@ -9,7 +9,9 @@ function getParts(file) {
   return parts;
 }
 
-const ignoredTests = new Set(JSON.parse(readFileSync('ignored-tests.json', 'utf-8')));
+const ignoredTests = new Set(
+  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
+);
 
 function mapData(filter) {
   const files = readdirSync('./data');
@@ -18,7 +20,9 @@ function mapData(filter) {
     .sort()
     .map((file) => {
       const [browser, timestamp] = getParts(file);
-      let { pending, passes, failures, stats } = JSON.parse(readFileSync(`./data/${file}`, 'utf-8'));
+      let { pending, passes, failures, stats } = JSON.parse(
+        readFileSync(`./data/${file}`, 'utf-8'),
+      );
       // Since few tests are supported we don't report the skipped tests to make
       // sure the chart is readable.
 
@@ -27,7 +31,7 @@ function mapData(filter) {
         failing: stats.failures,
         skipping: stats.pending,
         total: stats.tests,
-      }
+      };
       if (filter) {
         passes = passes.filter(filter);
         failures = failures.filter(filter);
