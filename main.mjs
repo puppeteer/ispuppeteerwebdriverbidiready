@@ -256,7 +256,11 @@ async function main() {
   timeEl.textContent = date;
 
   document.querySelector('#delta').textContent = (
-    await fetch('./firefox-delta.json')
+    await fetch(
+      searchParams.has('all')
+        ? './firefox-delta-all.json'
+        : './firefox-delta.json',
+    )
       .then((res) => res.json())
       .catch(() => {
         return {
