@@ -9,6 +9,11 @@ function getParts(file) {
   return parts;
 }
 
+const ignoredTests = new Set(
+  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
+);
+const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
+
 const files = readdirSync('./data');
 const data = files
   .filter(
@@ -77,7 +82,24 @@ writeFileSync('firefox-delta-count.json', JSON.stringify(countData, null, 2));
 
 // Write the latest run data to firefox-delta.json, including the full list
 // of passing vs failing tests.
-writeFileSync('firefox-delta.json', JSON.stringify(data.at(-1), null, 2));
+writeFileSync('firefox-delta-all.json', JSON.stringify(data.at(-1), null, 2));
+
+const { failingTests, passingTests, date } = data.at(-1);
+const filteredFailingTests = failingTests.filter(
+  (test) => !ignoredTests.has(test),
+);
+const filteredPassingTests = passingTests.filter(
+  (test) => !ignoredTests.has(test),
+);
+const onlyRequiredData = {
+  failing: filteredFailingTests.length,
+  failingTests: filteredFailingTests,
+  passing: filteredPassingTests.length,
+  date,
+  passingTests: filteredPassingTests,
+};
+
+writeFileSync('firefox-delta.json', JSON.stringify(onlyRequiredData, null, 2));
 
 const latestFirefox = files
   .filter(
@@ -96,11 +118,6 @@ const latestFirefoxTests = JSON.parse(
 const latestChromeTests = JSON.parse(
   readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8'),
 );
-
-const ignoredTests = new Set(
-  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
-);
-const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
 
 writeFileSync(
   'firefox-failing.json',
