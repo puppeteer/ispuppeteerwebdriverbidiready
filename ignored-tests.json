@@ -127,6 +127,7 @@
   "network Request.headers should define Chrome as user agent header",
   "network Request.postData should work with blobs",
   "network Request.postData should work",
+  "network Request.postData should be |undefined| when there is no post data",
   "network Response.buffer should throw if the response does not have a body",
   "network Response.buffer should work with compression",
   "network Response.buffer should work",
