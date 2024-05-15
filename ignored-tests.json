@@ -113,6 +113,7 @@
   "JSHandle Page.evaluateHandle should return the RemoteObject",
   "Launcher specs Browser.Events.disconnected should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
   "Launcher specs Puppeteer Browser.close should terminate network waiters",
+  "Launcher specs Puppeteer Browser.disconnect should reject navigation when browser closes",
   "Launcher specs Puppeteer Browser.disconnect should reject waitForSelector when browser closes",
   "Launcher specs Puppeteer Puppeteer.connect should be able to close remote browser",
   "Launcher specs Puppeteer Puppeteer.connect should be able to connect multiple times to the same browser",
