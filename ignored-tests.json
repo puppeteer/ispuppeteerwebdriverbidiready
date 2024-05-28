@@ -90,6 +90,7 @@
   "extensions service_worker target type should be available",
   "extensions target.page() should return a background_page",
   "Fixtures dumpio option should work with pipe option",
+  "Fixtures should close the browser when the node process closes",
   "headful tests HEADFUL headless should be able to read cookies written by headful",
   "ignoreHTTPSErrors Response.securityDetails Network redirects should report SecurityDetails",
   "ignoreHTTPSErrors Response.securityDetails should be |null| for non-secure requests",
