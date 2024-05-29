@@ -192,6 +192,7 @@
   "Page.pdf can print to PDF with outline",
   "Prerender can screencast",
   "request interception Page.setRequestInterception should navigate to URL with hash and fire requests without hash",
+  "request interception Page.setRequestInterception should work with requests without networkId",
   "request interception Request.resourceType should work for document type",
   "request interception Request.resourceType should work for stylesheets",
   "request proxy in incognito browser context should proxy requests when configured at browser level",
