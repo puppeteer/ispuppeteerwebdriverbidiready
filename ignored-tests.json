@@ -131,6 +131,7 @@
   "Launcher specs Puppeteer Puppeteer.connect should support targetFilter option",
   "Launcher specs Puppeteer Puppeteer.executablePath returns executablePath for channel",
   "Launcher specs Puppeteer Puppeteer.launch should be able to launch Chrome",
+  "Launcher specs Puppeteer Puppeteer.launch should be able to launch Firefox",
   "Launcher specs Puppeteer Puppeteer.launch should launch Chrome properly with --no-startup-window and waitForInitialPage=false",
   "Launcher specs Puppeteer Puppeteer.launch should work with no default arguments",
   "Legacy Drag n' Drop can be dragged and dropped with a single function",
