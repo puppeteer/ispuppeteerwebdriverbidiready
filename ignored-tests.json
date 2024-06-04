@@ -116,6 +116,7 @@
   "input tests Page.waitForFileChooser should work when file input is not attached to DOM",
   "input tests Page.waitForFileChooser should work with no timeout",
   "JSHandle Page.evaluateHandle should return the RemoteObject",
+  "Launcher specs Browser target events should work",
   "Launcher specs Browser.Events.disconnected should be emitted when: browser gets closed, disconnected or underlying websocket gets closed",
   "Launcher specs Puppeteer Browser.close should terminate network waiters",
   "Launcher specs Puppeteer Browser.disconnect should reject navigation when browser closes",
