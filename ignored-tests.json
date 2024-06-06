@@ -180,6 +180,7 @@
   "Page Page.Events.Console should have location when fetch fails",
   "Page Page.Events.Console should return remote objects",
   "Page Page.Events.Console should trigger correct Log",
+  "Page Page.Events.Console should work for different console API calls with timing functions",
   "Page Page.Events.error should throw when page crashes",
   "Page Page.metrics metrics event fired on console.timeStamp",
   "Page Page.metrics should get metrics from a page",
