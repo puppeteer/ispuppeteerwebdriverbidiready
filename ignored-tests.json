@@ -235,6 +235,7 @@
   "Tracing should support a buffer without a path",
   "Tracing should throw if tracing on two pages",
   "Tracing should work without options",
+  "waittask specs Frame.waitForFunction should work with strict CSP policy",
   "Workers can be closed",
   "Workers Page.workers",
   "Workers should emit created and destroyed events",
