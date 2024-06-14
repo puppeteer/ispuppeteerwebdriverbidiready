@@ -146,6 +146,7 @@
   "navigation Page.goto should send referer",
   "network Page.setBypassServiceWorker bypass for network",
   "network Request.headers should define Chrome as user agent header",
+  "network Request.initiator should return the initiator",
   "network Request.postData should be |undefined| when there is no post data",
   "network Request.postData should work with blobs",
   "network Request.postData should work",
