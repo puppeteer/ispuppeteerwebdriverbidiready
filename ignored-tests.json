@@ -223,6 +223,7 @@
   "Target should close a shared worker",
   "Target should create a worker from a service worker",
   "Target should create a worker from a shared worker",
+  "Target should have an opener",
   "Target should not report uninitialized pages",
   "Target should report when a service worker is created and destroyed",
   "Target.createCDPSession should expose the underlying connection",
