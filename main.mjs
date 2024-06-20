@@ -238,15 +238,24 @@ async function createFirefoxDeltaChart() {
 }
 
 async function main() {
+  const allTests = searchParams.has('all');
   // Add ?firefox-delta to the URL to see data focused on Firefox BiDi vs
   // Firefox CDP.
   if (searchParams.has('firefox-delta')) {
     await createFirefoxDeltaChart();
   } else {
-    await createMainChart(searchParams.has('all'));
+    await createMainChart(allTests);
   }
 
-  if (searchParams.has('all')) {
+  for (const link of document.querySelectorAll('.json-link')) {
+    let filename = link.dataset.name;
+    if (allTests) {
+      filename += '-all';
+    }
+    link.href = `https://puppeteer.github.io/ispuppeteerwebdriverbidiready/${filename}.json`
+  }
+
+  if (allTests) {
     document.querySelector('#ready').style.display = 'none';
     document.querySelector('[href="#ready"]').style.display = 'none';
   }
@@ -257,7 +266,7 @@ async function main() {
 
   document.querySelector('#delta').textContent = (
     await fetch(
-      searchParams.has('all')
+      allTests
         ? './firefox-delta-all.json'
         : './firefox-delta.json',
     )
@@ -270,7 +279,7 @@ async function main() {
   ).failing;
 
   const firefoxFailing = await fetch(
-    searchParams.has('all')
+    allTests
       ? './firefox-failing-all.json'
       : './firefox-failing.json',
   )
@@ -285,7 +294,7 @@ async function main() {
     firefoxFailing.failing.length + firefoxFailing.pending.length;
 
   const chromeFailing = await fetch(
-    searchParams.has('all')
+    allTests
       ? './chrome-failing-all.json'
       : './chrome-failing.json',
   )
