@@ -186,6 +186,7 @@
   "Page Page.metrics metrics event fired on console.timeStamp",
   "Page Page.metrics should get metrics from a page",
   "Page Page.pdf can print to PDF with accessible",
+  "Page Page.pdf should respect timeout",
   "Page Page.setBypassCSP should bypass after cross-process navigation",
   "Page Page.setBypassCSP should bypass CSP header",
   "Page Page.setBypassCSP should bypass CSP in iframes as well",
