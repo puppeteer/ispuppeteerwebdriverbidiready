@@ -2,6 +2,7 @@
   "Accessibility autocomplete",
   "Accessibility filtering children of leaf nodes checkbox with and tabIndex and label should not have children",
   "Accessibility filtering children of leaf nodes checkbox without label should not have children",
+  "Accessibility filtering children of leaf nodes elementHandle() should get an ElementHandle from a snapshot item",
   "Accessibility filtering children of leaf nodes non editable textbox with role and tabIndex and label should not have children",
   "Accessibility filtering children of leaf nodes plaintext contenteditable plain text field with role should not have children",
   "Accessibility filtering children of leaf nodes rich text editable fields should have children",
