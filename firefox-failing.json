@@ -1,0 +1,24 @@
+{
+  "failing": [
+    "navigation Page.goto should work when page calls history API in beforeunload",
+    "network Page.authenticate should work",
+    "network Page.authenticate should allow disable authentication",
+    "Page Page.setCacheEnabled should enable or disable the cache based on the state passed",
+    "Page Page.setCacheEnabled should stay disabled when toggling request interception on/off",
+    "cooperative request interception Request.continue should redirect in a way non-observable to page",
+    "request interception Request.continue should redirect in a way non-observable to page"
+  ],
+  "pending": [
+    "navigation Page.waitForNavigation should work with history.replaceState()",
+    "network Page.authenticate should not disable caching for stylesheet",
+    "network Page.authenticate should not disable caching for script",
+    "cooperative request interception Page.setRequestInterception should be able to fetch dataURL and fire dataURL requests",
+    "cooperative request interception Page.setRequestInterception should not cache if cache disabled",
+    "cooperative request interception Page.setRequestInterception should cache if cache enabled",
+    "cooperative request interception Page.setRequestInterception should load fonts if cache enabled",
+    "request interception Page.setRequestInterception should be able to fetch dataURL and fire dataURL requests",
+    "request interception Page.setRequestInterception should not cache if cache disabled",
+    "request interception Page.setRequestInterception should cache if cache enabled",
+    "request interception Page.setRequestInterception should load fonts if cache enabled"
+  ]
+}
