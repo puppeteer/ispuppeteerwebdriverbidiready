@@ -22,6 +22,7 @@
   "Accessibility should work",
   "AriaQueryHandler queryOne (Chromium web test) should find by role \"heading\"",
   "Autofill ElementHandle.autofill should fill out a credit card",
+  "BFCache can call a function exposed on a page restored from bfcache",
   "BFCache can navigate to a BFCached page containing an OOPIF and a worker",
   "BFCache can navigate to a BFCached page",
   "Browser specs Browser.isConnected should set the browser connected state",
