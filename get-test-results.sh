@@ -11,6 +11,7 @@ cd puppeteer
 npm ci
 npm run build -w @puppeteer-test/test
 
+PUPPETEER_PRODUCT=chrome node packages/puppeteer/install.mjs
 PUPPETEER_PRODUCT=firefox node packages/puppeteer/install.mjs
 export CI=true
 
