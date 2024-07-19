@@ -16,11 +16,11 @@ PUPPETEER_PRODUCT=firefox node packages/puppeteer/install.mjs
 export CI=true
 
 cdp-firefox() {
-    npm run test -- --test-suite firefox-headless --no-coverage --save-stats-to $CWD/data/firefox-cdp-$timestamp.json --no-cdp-tests
+    npm run test -- --test-suite firefox-cdp --no-coverage --save-stats-to $CWD/data/firefox-cdp-$timestamp.json --no-cdp-tests
 }
 
 bidi-firefox() {
-  npm run test -- --test-suite firefox-bidi --no-coverage --save-stats-to $CWD/data/firefox-$timestamp.json --no-cdp-tests
+  npm run test -- --test-suite firefox-headless --no-coverage --save-stats-to $CWD/data/firefox-$timestamp.json --no-cdp-tests
 }
 
 bidi-chrome() {
