@@ -1,0 +1,8 @@
+{
+  "failing": [
+    "Frame specs Frame.prototype.frameElement should handle shadow roots"
+  ],
+  "pending": [
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
