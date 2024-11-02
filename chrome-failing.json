@@ -1,0 +1,9 @@
+{
+  "failing": [
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "navigation Page.goto should work when navigating to a URL with a client redirect"
+  ],
+  "pending": [
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
