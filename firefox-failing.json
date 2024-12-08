@@ -1,0 +1,19 @@
+{
+  "failing": [
+    "BrowserContext cookies BrowserContext.setCookie should set cookie with a partition key",
+    "ElementHandle specs ElementHandle.touchMove should work",
+    "ElementHandle specs ElementHandle.touchMove should work with a pre-existing Touch",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "navigation Page.goto should work when navigating to a URL with a client redirect",
+    "OOPIF should retrieve body for OOPIF document requests",
+    "Touchscreen Touchscreen.prototype.tap should work if another touch is already active",
+    "Touchscreen Touchscreen.prototype.touchMove should work with two touches",
+    "Touchscreen Touchscreen.prototype.touchMove should work when moving touches separately",
+    "Touchscreen Touchscreen.prototype.touchMove should work with three touches"
+  ],
+  "pending": [
+    "Download Browser.createBrowserContext should download to configured location",
+    "Download Browser.createBrowserContext should not download to location",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
