@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Is Puppeteer ready for WebDriver BiDi yet?</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font: 1rem/1.6 sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+      h1 a {
+        text-decoration: none;
+      }
+      @media screen and (min-width: 1900px) {
+        h1 {
+          font-size: 72px;
+        }
+      }
+      #main {
+        height: 100vh;
+        width: calc(100vw - 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #area {
+        display: flex;
+        height: 80vh;
+        width: 100%;
+        justify-content: center;
+      }
+      footer {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+      }
+      @media screen and (min-width: 1900px) {
+        footer {
+          font-size: 32px;
+        }
+      }
+      #delta {
+        font-weight: bold;
+      }
+    </style>
+    <div id="main">
+      <h1>Is Puppeteer ready for WebDriver BiDi yet?<a href="#ready">*</a></h1>
+      <div id="area">
+        <canvas id="chart"></canvas>
+      </div>
+      <footer>
+        <div>
+          Firefox (WebDriver BiDi) has
+          <a
+            class="json-link"
+            data-name="firefox-delta"
+            href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/firefox-delta.json"
+            ><span id="delta"></span> failing or skipped tests</a
+          >
+          that pass with Firefox (CDP). <br />
+          In total, Firefox (WebDriver BiDi) has
+          <a
+            class="json-link"
+            data-name="firefox-failing"
+            href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/firefox-failing.json"
+            ><span id="firefox-failing"></span> failing or skipped tests</a
+          >
+          and Chrome (WebDriver BiDi) has
+          <a
+            class="json-link"
+            data-name="chrome-failing"
+            href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/chrome-failing.json"
+            ><span id="chrome-failing"></span> failing or skipped tests</a
+          >.
+          <p id="ready">
+            * Includes tests deemed necessary for production-ready use of
+            WebDriver BiDi in Puppeteer.
+            <a id="all">See status for all tests</a>.
+          </p>
+        </div>
+        <div>
+          <a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready"
+            >source code</a
+          >
+          · last updated at <time>YYYY-MM-DD</time>
+          <div>
+            <a id="last-12-month" href="">Last 12 months</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      const url = new URL(window.location.href);
+      const last365DaysInMS = 365 * 24 * 60 * 60 * 1000;
+      url.searchParams.set(
+        'start-date',
+        new Date(Date.now() - last365DaysInMS).toISOString(),
+      );
+      document.querySelector('#last-12-month').href = url.toString();
+      const urlAll = new URL(window.location.href);
+      urlAll.searchParams.set('all', true);
+      document.querySelector('#all').href = urlAll.toString();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script type="module" src="main.mjs"></script>
+  </body>
+</html>
