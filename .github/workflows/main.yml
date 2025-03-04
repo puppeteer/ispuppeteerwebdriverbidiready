@@ -2,7 +2,7 @@ name: Build and deploy
 
 permissions:
   actions: write
-  attestations: none
+  attestations: write
   checks: write
   contents: write
   deployments: none
@@ -30,6 +30,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
       - name: Fetch data
         run: |
           ./get-test-results.sh
