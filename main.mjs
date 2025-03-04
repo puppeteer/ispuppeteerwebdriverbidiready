@@ -252,7 +252,7 @@ async function main() {
     if (allTests) {
       filename += '-all';
     }
-    link.href = `https://puppeteer.github.io/ispuppeteerwebdriverbidiready/${filename}.json`
+    link.href = `https://puppeteer.github.io/ispuppeteerwebdriverbidiready/${filename}.json`;
   }
 
   if (allTests) {
@@ -265,11 +265,7 @@ async function main() {
   timeEl.textContent = date;
 
   document.querySelector('#delta').textContent = (
-    await fetch(
-      allTests
-        ? './firefox-delta-all.json'
-        : './firefox-delta.json',
-    )
+    await fetch(allTests ? './firefox-delta-all.json' : './firefox-delta.json')
       .then((res) => res.json())
       .catch(() => {
         return {
@@ -279,9 +275,7 @@ async function main() {
   ).failing;
 
   const firefoxFailing = await fetch(
-    allTests
-      ? './firefox-failing-all.json'
-      : './firefox-failing.json',
+    allTests ? './firefox-failing-all.json' : './firefox-failing.json',
   )
     .then((res) => res.json())
     .catch(() => {
@@ -294,9 +288,7 @@ async function main() {
     firefoxFailing.failing.length + firefoxFailing.pending.length;
 
   const chromeFailing = await fetch(
-    allTests
-      ? './chrome-failing-all.json'
-      : './chrome-failing.json',
+    allTests ? './chrome-failing-all.json' : './chrome-failing.json',
   )
     .then((res) => res.json())
     .catch(() => {
