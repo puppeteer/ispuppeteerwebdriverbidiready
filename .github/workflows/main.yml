@@ -35,6 +35,8 @@ jobs:
         with:
           cache: npm
           node-version-file: '.nvmrc'
+      - name: Disable AppArmor
+        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
       - name: Fetch data
         run: |
           ./get-test-results.sh
