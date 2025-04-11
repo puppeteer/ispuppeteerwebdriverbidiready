@@ -1,0 +1,15 @@
+{
+  "failing": [
+    "Frame specs Frame Management should support framesets",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "navigation Page.goto should work when page calls history API in beforeunload",
+    "OOPIF should retrieve body for OOPIF document requests",
+    "Workers should retrieve body for main worker requests"
+  ],
+  "pending": [
+    "extensions can evaluate in the service worker",
+    "Download Browser.createBrowserContext should download to configured location",
+    "Download Browser.createBrowserContext should not download to location",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
