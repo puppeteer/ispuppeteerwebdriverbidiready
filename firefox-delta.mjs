@@ -70,20 +70,6 @@ const data = files
   })
   .filter((item) => item !== null);
 
-// Keep only the failing and passing counts to support the firefox delta chart.
-const countData = data.map((item) => {
-  return {
-    failing: item.failing,
-    passing: item.passing,
-    date: item.date,
-  };
-});
-writeFileSync('firefox-delta-count.json', JSON.stringify(countData, null, 2));
-
-// Write the latest run data to firefox-delta.json, including the full list
-// of passing vs failing tests.
-writeFileSync('firefox-delta-all.json', JSON.stringify(data.at(-1), null, 2));
-
 const { failingTests, passingTests, date } = data.at(-1);
 const filteredFailingTests = failingTests.filter(
   (test) => !ignoredTests.has(test),
