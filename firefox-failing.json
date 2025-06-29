@@ -1,0 +1,29 @@
+{
+  "failing": [
+    "BrowserContext cookies BrowserContext.setCookie should set cookie with a partition key",
+    "Puppeteer.connect should be able to connect using browserUrl, with and without trailing slash",
+    "ElementHandle specs ElementHandle.touchMove should work",
+    "ElementHandle specs ElementHandle.touchMove should work with a pre-existing Touch",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "navigation Page.goto should work when navigating to a URL with a client redirect",
+    "navigation Page.goto should work when a page redirects on DOMContentLoaded",
+    "OOPIF should retrieve body for OOPIF document requests",
+    "Touchscreen Touchscreen.prototype.tap should work if another touch is already active",
+    "Touchscreen Touchscreen.prototype.touchMove should work with two touches",
+    "Touchscreen Touchscreen.prototype.touchMove should work when moving touches separately",
+    "Touchscreen Touchscreen.prototype.touchMove should work with three touches",
+    "webExtension can install and uninstall an extension"
+  ],
+  "pending": [
+    "Accessibility iframes should not include iframe data if not requested",
+    "Accessibility iframes same-origin iframe (interesting only)",
+    "Accessibility iframes cross-origin iframe (interesting only)",
+    "Accessibility iframes same-origin iframe (all nodes)",
+    "Download Browser.createBrowserContext should download to configured location",
+    "Download Browser.createBrowserContext should not download to location",
+    "waittask specs Frame.waitForFunction should work when resolved right before execution context disposal",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root",
+    "Workers should work with waitForNetworkIdle",
+    "Workers should retrieve body for main worker requests"
+  ]
+}
