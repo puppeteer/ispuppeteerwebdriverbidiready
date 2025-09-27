@@ -1,0 +1,10 @@
+{
+  "failing": [
+    "Frame specs Frame Management should support framesets",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots"
+  ],
+  "pending": [
+    "extensions can evaluate in the service worker",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
