@@ -38,19 +38,25 @@ async function createMainChart(showAllTests = false) {
   );
   const entries = await response.json();
 
-  const chartData = [];
+  const chartData /*: [string, number, number, number, string, string, string][]*/ = [];
   let prev = [];
 
   for (const entry of entries.reverse()) {
-    const { date, firefoxCounts, chromeCounts } = entry;
-    if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing) {
+    const { date, firefoxCounts, chromeCounts, chromeBidiOnlyCounts } = entry;
+    if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing
+        && prev[2] === chromeBidiOnlyCounts.passing) {
       continue;
     }
-    prev = [chromeCounts.passing, firefoxCounts.passing];
+    prev = [
+      chromeCounts.passing,
+      firefoxCounts.passing,
+      chromeBidiOnlyCounts.passing];
+
     chartData.push([
       new Date(date),
       (firefoxCounts.passing / firefoxCounts.total) * 100,
       (chromeCounts.passing / chromeCounts.total) * 100,
+      (chromeBidiOnlyCounts.passing / chromeBidiOnlyCounts.total) * 100,
       buildTooltip(
         'Firefox ' + new Date(date).toLocaleDateString(),
         firefoxCounts,
@@ -58,6 +64,10 @@ async function createMainChart(showAllTests = false) {
       buildTooltip(
         'Chrome ' + new Date(date).toLocaleDateString(),
         chromeCounts,
+      ),
+      buildTooltip(
+        'Chrome BiDi only ' + new Date(date).toLocaleDateString(),
+          chromeBidiOnlyCounts,
       ),
     ]);
     if (new Date(date) < startDate) {
@@ -104,13 +114,17 @@ async function createMainChart(showAllTests = false) {
       return;
     }
 
+    // `chartData` contains date, then percentage for each dataset, then
+    // tooltip per each dataset.
+    const tooltipOffset = (chartData[0].length-1) / 2 + 1;
+
     // Set Text
     if (tooltip.body) {
       const dataPoints = tooltip.dataPoints;
       const dataPoint = dataPoints[0];
       const dataIndex = dataPoint.dataIndex;
       const datasetIndex = dataPoint.datasetIndex;
-      tooltipEl.innerHTML = chartData[dataIndex][3 + datasetIndex];
+      tooltipEl.innerHTML = chartData[dataIndex][tooltipOffset + datasetIndex];
     }
 
     const { offsetLeft: positionX, offsetTop: positionY } = chart.canvas;
@@ -141,6 +155,11 @@ async function createMainChart(showAllTests = false) {
         {
           label: '% tests passed (Chrome)',
           data: chartData.map((item) => item[2]),
+          borderWidth: 1,
+        },
+        {
+          label: '% tests passed (Chrome BiDi only)',
+          data: chartData.map((item) => item[3]),
           borderWidth: 1,
         },
       ],

@@ -97,13 +97,38 @@ const latestFirefox = files
   .sort()
   .at(-1);
 
+const defaultStats = {
+    "stats": {
+        "suites": 0,
+        "tests": 0,
+        "passes": 0,
+        "pending": 0,
+        "failures": 0,
+        "start": "never",
+        "end": "never",
+        "duration": 0
+    },
+    "tests": [],
+    "failures": [],
+    "passes": [],
+    "pending": []
+}
+
 const timestamp = getParts(latestFirefox)[1];
 const latestFirefoxTests = JSON.parse(
   readFileSync(`./data/firefox-${timestamp}.json`, 'utf-8'),
 );
-const latestChromeTests = JSON.parse(
-  readFileSync(`./data/chrome-${timestamp}.json`, 'utf-8'),
-);
+
+const chromeFilePath = `./data/chrome-${timestamp}.json`;
+const latestChromeTests = existsSync(chromeFilePath)
+  ? JSON.parse(readFileSync(chromeFilePath, 'utf-8'))
+  : defaultStats;
+
+const chromeBidiOnlyFilePath = `./data/chromeBidiOnly-${timestamp}.json`;
+const latestChromeBidiOnlyTests = existsSync(chromeBidiOnlyFilePath)
+  ? JSON.parse(readFileSync(chromeBidiOnlyFilePath, 'utf-8'))
+  : defaultStats;
+
 
 writeFileSync(
   'firefox-failing.json',
@@ -138,6 +163,22 @@ writeFileSync(
 );
 
 writeFileSync(
+  'chromeBidiOnly-failing.json',
+  JSON.stringify(
+    {
+      failing: latestChromeBidiOnlyTests.failures
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
+      pending: latestChromeBidiOnlyTests.pending
+        .filter(filterIgnored)
+        .map((t) => t.fullTitle),
+    },
+    null,
+    2,
+  ),
+);
+
+writeFileSync(
   'firefox-failing-all.json',
   JSON.stringify(
     {
@@ -155,6 +196,17 @@ writeFileSync(
     {
       failing: latestChromeTests.failures.map((t) => t.fullTitle),
       pending: latestChromeTests.pending.map((t) => t.fullTitle),
+    },
+    null,
+    2,
+  ),
+);
+writeFileSync(
+  'chromeBidiOnly-failing-all.json',
+  JSON.stringify(
+    {
+      failing: latestChromeBidiOnlyTests.failures.map((t) => t.fullTitle),
+      pending: latestChromeBidiOnlyTests.pending.map((t) => t.fullTitle),
     },
     null,
     2,

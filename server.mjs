@@ -30,6 +30,11 @@ const server = createServer((req, res) => {
       res.end(readFileSync('./chrome-failing.json'));
       break;
     }
+    case '/chromeBidiOnly-failing.json': {
+      res.writeHead(200, { 'Content-Type': 'application/json;charset=utf-8' });
+      res.end(readFileSync('./chromeBidiOnly-failing.json'));
+      break;
+    }
   }
 });
 
