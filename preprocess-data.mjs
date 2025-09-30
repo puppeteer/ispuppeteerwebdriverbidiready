@@ -70,6 +70,15 @@ function mapData(filter) {
         total: 0,
         unsupported: 0,
       },
+      chromeBidiOnlyCounts: groupByDate
+        .get(date)
+        .find((item) => item.browser === 'chromeBidiOnly')?.counts || {
+        passing: 0,
+        failing: 0,
+        skipping: 0,
+        total: 0,
+        unsupported: 0,
+      },
       firefoxCounts: groupByDate
         .get(date)
         .find((item) => item.browser === 'firefox')?.counts || {

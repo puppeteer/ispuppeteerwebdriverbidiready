@@ -3,6 +3,7 @@ firefox-delta*.json
 firefox-delta-count.json
 firefox-failing*.json
 chrome-failing*.json
+chromeBidiOnly-failing*.json
 dist
 
 # Installed npm modules
