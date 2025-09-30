@@ -24,8 +24,8 @@ function buildTooltip(label, counts) {
       <h3 style="margin: 0;">${label}</h3>
       <div>Total: ${counts.total}</div>
       <div>Passing: ${counts.passing} (${formatPercentage(
-        counts.passing / counts.total,
-      )})</div>
+    counts.passing / counts.total,
+  )})</div>
       <div>Skipping: ${counts.skipping}</div>
       <div>Failing: ${counts.failing}</div>
     </div>
@@ -38,19 +38,24 @@ async function createMainChart(showAllTests = false) {
   );
   const entries = await response.json();
 
-  const chartData /*: [string, number, number, number, string, string, string][]*/ = [];
+  const chartData /*: [string, number, number, number, string, string, string][]*/ =
+    [];
   let prev = [];
 
   for (const entry of entries.reverse()) {
     const { date, firefoxCounts, chromeCounts, chromeBidiOnlyCounts } = entry;
-    if (prev[0] === chromeCounts.passing && prev[1] === firefoxCounts.passing
-        && prev[2] === chromeBidiOnlyCounts.passing) {
+    if (
+      prev[0] === chromeCounts.passing &&
+      prev[1] === firefoxCounts.passing &&
+      prev[2] === chromeBidiOnlyCounts.passing
+    ) {
       continue;
     }
     prev = [
       chromeCounts.passing,
       firefoxCounts.passing,
-      chromeBidiOnlyCounts.passing];
+      chromeBidiOnlyCounts.passing,
+    ];
 
     chartData.push([
       new Date(date),
@@ -67,7 +72,7 @@ async function createMainChart(showAllTests = false) {
       ),
       buildTooltip(
         'Chrome BiDi only ' + new Date(date).toLocaleDateString(),
-          chromeBidiOnlyCounts,
+        chromeBidiOnlyCounts,
       ),
     ]);
     if (new Date(date) < startDate) {
@@ -116,7 +121,7 @@ async function createMainChart(showAllTests = false) {
 
     // `chartData` contains date, then percentage for each dataset, then
     // tooltip per each dataset.
-    const tooltipOffset = (chartData[0].length-1) / 2 + 1;
+    const tooltipOffset = (chartData[0].length - 1) / 2 + 1;
 
     // Set Text
     if (tooltip.body) {
@@ -233,6 +238,20 @@ async function main() {
       };
     });
   document.querySelector('#chrome-failing').textContent =
+    chromeFailing.failing.length + chromeFailing.pending.length;
+  const chromeBidiOnlyFailing = await fetch(
+    allTests
+      ? './chromeBidiOnly-failing-all.json'
+      : './chromeBidiOnly-failing.json',
+  )
+    .then((res) => res.json())
+    .catch(() => {
+      return {
+        failing: [],
+        pending: [],
+      };
+    });
+  document.querySelector('#chromeBidiOnly-failing').textContent =
     chromeFailing.failing.length + chromeFailing.pending.length;
 }
 
