@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,6 +11,7 @@
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
       html {
         font: 1rem/1.6 sans-serif;
@@ -29,7 +30,6 @@
       }
       #main {
         height: 100vh;
-        width: calc(100vw - 40px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,6 +44,8 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
+        gap: 16px;
+        padding: 0 16px;
       }
       @media screen and (min-width: 1900px) {
         footer {
@@ -67,32 +69,31 @@
             data-name="firefox-failing"
             href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/firefox-failing.json"
             ><span id="firefox-failing"></span> failing or skipped tests</a
-          >,
-          Chrome (WebDriver BiDi) has
+          >,<br />
+          Chrome (WebDriver BiDi+) has
           <a
             class="json-link"
             data-name="chrome-failing"
             href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/chrome-failing.json"
             ><span id="chrome-failing"></span> failing or skipped tests</a
-          >
-          and Chrome (WebDriver BiDi only) has
+          ><br />, Chrome (WebDriver BiDi only) has
           <a
             class="json-link"
             data-name="chromeBidiOnly-failing"
             href="https://puppeteer.github.io/ispuppeteerwebdriverbidiready/chromeBidiOnly-failing.json"
-            ><span id="chromeBidiOnly-failing"></span> failing or skipped tests</a
-          >.
+            ><span id="chromeBidiOnly-failing"></span> failing or skipped
+            tests</a
+          >
           <p id="ready">
-            * Includes tests deemed necessary for production-ready use of
-            WebDriver BiDi in Puppeteer.
+            * Tests deemed necessary for production-ready use of WebDriver BiDi
+            in Puppeteer.<br />
             <a id="all">See status for all tests</a>.
           </p>
         </div>
         <div>
           <a href="https://github.com/puppeteer/ispuppeteerwebdriverbidiready"
             >source code</a
-          >
-          · last updated at <time>YYYY-MM-DD</time>
+          ><br />last updated at <time>YYYY-MM-DD</time>
           <div>
             <a id="last-12-month" href="">Last 12 months</a>
           </div>
