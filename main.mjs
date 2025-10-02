@@ -252,7 +252,7 @@ async function main() {
       };
     });
   document.querySelector('#chromeBidiOnly-failing').textContent =
-    chromeFailing.failing.length + chromeFailing.pending.length;
+    chromeBidiOnlyFailing.failing.length + chromeBidiOnlyFailingfi.pending.length;
 }
 
 main();
