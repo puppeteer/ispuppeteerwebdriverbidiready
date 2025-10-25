@@ -1,0 +1,39 @@
+{
+  "failing": [
+    "Puppeteer.connect should be able to connect using browserUrl, with and without trailing slash",
+    "ElementHandle specs ElementHandle.touchMove should work",
+    "ElementHandle specs ElementHandle.touchMove should work with a pre-existing Touch",
+    "Emulation Page.emulateNetworkConditions should support offline",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "navigation Page.goto should work when page calls history API in beforeunload",
+    "network Request.fetchPostData should work",
+    "network Request.fetchPostData should work with blobs",
+    "Page Page.Events.PageError should fire for all value types",
+    "Page Page.setUserAgent should work with platform option",
+    "Page Page.setUserAgent should work with platform option without userAgent",
+    "Page Page.setJavaScriptEnabled setInterval should pause",
+    "Page Page.setJavaScriptEnabled setTimeout should stop",
+    "Page Page.setJavaScriptEnabled then should not pause",
+    "Page Page.reload should enable or disable the cache based on reload params",
+    "Touchscreen Touchscreen.prototype.tap should work if another touch is already active",
+    "Touchscreen Touchscreen.prototype.touchMove should work with two touches",
+    "Touchscreen Touchscreen.prototype.touchMove should work when moving touches separately",
+    "Touchscreen Touchscreen.prototype.touchMove should work with three touches"
+  ],
+  "pending": [
+    "Accessibility should work for showcase",
+    "Accessibility iframes should not include iframe data if not requested",
+    "Accessibility iframes same-origin iframe (interesting only)",
+    "Accessibility iframes cross-origin iframe (interesting only)",
+    "Accessibility iframes same-origin iframe (all nodes)",
+    "Accessibility filtering children of leaf nodes should not report Document as leaf node",
+    "Accessibility filtering children of leaf nodes root option should work with nested button inside h1 with interestingOnly:true",
+    "Accessibility filtering children of leaf nodes elementHandle() should get the parent ElementHandle from a text node accessibility node",
+    "Download Browser.createBrowserContext should download to configured location",
+    "Download Browser.createBrowserContext should not download to location",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root",
+    "webgl Create webgl context should work",
+    "Workers should work with waitForNetworkIdle",
+    "Workers should retrieve body for main worker requests"
+  ]
+}
