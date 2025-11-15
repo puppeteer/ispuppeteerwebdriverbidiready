@@ -1,0 +1,14 @@
+{
+  "failing": [
+    "Frame specs Frame Management should support framesets",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "Page Page.Events.PageError should fire for all value types"
+  ],
+  "pending": [
+    "DevTools browser.pages() should return a DevTools page if handleDevToolsAsPage is provided in connect()",
+    "DevTools browser.pages() should return a DevTools page if handleDevToolsAsPage is provided in launch()",
+    "DevTools should support opening DevTools on a page",
+    "extensions can evaluate in the service worker",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}

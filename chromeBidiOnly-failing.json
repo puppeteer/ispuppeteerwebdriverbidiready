@@ -1,0 +1,35 @@
+{
+  "failing": [
+    "Accessibility should work for showcase",
+    "Accessibility iframes should not include iframe data if not requested",
+    "Accessibility iframes same-origin iframe (interesting only)",
+    "Accessibility iframes cross-origin iframe (interesting only)",
+    "Accessibility iframes same-origin iframe (all nodes)",
+    "Accessibility filtering children of leaf nodes should not report Document as leaf node",
+    "Accessibility filtering children of leaf nodes root option should work with nested button inside h1 with interestingOnly:true",
+    "Accessibility filtering children of leaf nodes elementHandle() should get the parent ElementHandle from a text node accessibility node",
+    "ElementHandle.backendNodeId should work",
+    "Target.createCDPSession should work",
+    "Target.createCDPSession should send events",
+    "Target.createCDPSession should enable and disable domains independently",
+    "Target.createCDPSession should be able to detach session",
+    "Target.createCDPSession should throw nice errors",
+    "Target.createCDPSession should respect custom timeout",
+    "Target.createCDPSession should keep the underlying connection after being detached",
+    "Target.createCDPSession should expose detached state",
+    "DevTools browser.pages() should return a DevTools page if handleDevToolsAsPage is provided in launch()",
+    "DevTools should support opening DevTools on a page",
+    "extensions can evaluate in the service worker",
+    "page.queryObjects should work",
+    "page.queryObjects should work for non-trivial page",
+    "Emulation Page.emulateNetworkConditions should support offline",
+    "Frame specs Frame Management should support framesets",
+    "Frame specs Frame.prototype.frameElement should handle shadow roots",
+    "Page Page.Events.PageError should fire for all value types",
+    "Page Page.setUserAgent should work with platform option",
+    "Page Page.setUserAgent should work with platform option without userAgent"
+  ],
+  "pending": [
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
