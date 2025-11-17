@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, existsSync, writeFileSync } from 'fs';
+import {existsSync, readdirSync, readFileSync, writeFileSync} from 'fs';
 
 function getParts(file) {
   const parts = file.split('-');
@@ -9,10 +9,7 @@ function getParts(file) {
   return parts;
 }
 
-const ignoredTests = new Set(
-  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
-);
-const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
+const filterIgnored = (result) => !result.file.includes('/cdp/');
 
 const files = readdirSync('./data');
 const data = files
@@ -45,20 +42,23 @@ const data = files
       JSON.parse(readFileSync(cdpFile, 'utf-8')).passes.map((p) => p.fullTitle),
     );
 
-    for (const test of biDiTests) {
-      if (
-        passingCdpTests.has(test.fullTitle) &&
-        !passingBiDiTests.has(test.fullTitle)
-      ) {
-        cdpPassBiDiFailTest.push(test.fullTitle);
+    biDiTests
+      .filter(filterIgnored)
+      .forEach(test => {
+        if (
+          passingCdpTests.has(test.fullTitle) &&
+          !passingBiDiTests.has(test.fullTitle)
+        ) {
+          cdpPassBiDiFailTest.push(test.fullTitle);
+        }
+        if (
+          !passingCdpTests.has(test.fullTitle) &&
+          passingBiDiTests.has(test.fullTitle)
+        ) {
+          cdpFailBiDiPassTest.push(test.fullTitle);
+        }
       }
-      if (
-        !passingCdpTests.has(test.fullTitle) &&
-        passingBiDiTests.has(test.fullTitle)
-      ) {
-        cdpFailBiDiPassTest.push(test.fullTitle);
-      }
-    }
+    );
 
     return {
       failing: cdpPassBiDiFailTest.length,
@@ -71,18 +71,12 @@ const data = files
   .filter((item) => item !== null);
 
 const { failingTests, passingTests, date } = data.at(-1);
-const filteredFailingTests = failingTests.filter(
-  (test) => !ignoredTests.has(test),
-);
-const filteredPassingTests = passingTests.filter(
-  (test) => !ignoredTests.has(test),
-);
 const onlyRequiredData = {
-  failing: filteredFailingTests.length,
-  failingTests: filteredFailingTests,
-  passing: filteredPassingTests.length,
+  failing: failingTests.length,
+  failingTests: failingTests,
+  passing: passingTests.length,
   date,
-  passingTests: filteredPassingTests,
+  passingTests: passingTests,
 };
 
 writeFileSync('firefox-delta.json', JSON.stringify(onlyRequiredData, null, 2));
@@ -128,7 +122,6 @@ const chromeBidiOnlyFilePath = `./data/chromeBidiOnly-${timestamp}.json`;
 const latestChromeBidiOnlyTests = existsSync(chromeBidiOnlyFilePath)
   ? JSON.parse(readFileSync(chromeBidiOnlyFilePath, 'utf-8'))
   : defaultStats;
-
 
 writeFileSync(
   'firefox-failing.json',

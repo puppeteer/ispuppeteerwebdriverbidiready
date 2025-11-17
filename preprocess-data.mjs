@@ -9,10 +9,6 @@ function getParts(file) {
   return parts;
 }
 
-const ignoredTests = new Set(
-  JSON.parse(readFileSync('ignored-tests.json', 'utf-8')),
-);
-
 function mapData(filter) {
   const files = readdirSync('./data');
   const data = files
@@ -94,7 +90,7 @@ function mapData(filter) {
   return mappedData;
 }
 
-const filterIgnored = (result) => !ignoredTests.has(result.fullTitle);
+const filterIgnored = (result) => !result.file?.includes('/cdp/');
 writeFileSync('data.json', JSON.stringify(mapData(filterIgnored), null, 2));
 writeFileSync('data-all.json', JSON.stringify(mapData(), null, 2));
 // console.log(mappedData);
