@@ -27,8 +27,13 @@ bidi-only-chrome() {
   npm run test -- --test-suite chrome-bidi-only --no-coverage --save-stats-to $CWD/data/chromeBidiOnly-$timestamp.json
 }
 
+cdp-chrome() {
+  npm run test -- --test-suite chrome-headless --no-coverage --save-stats-to $CWD/data/chrome-cdp-$timestamp.json
+}
+
 bidi-firefox
 bidi-chrome
 bidi-only-chrome
+cdp-chrome
 
 exit 0

@@ -123,6 +123,11 @@ const latestChromeBidiOnlyTests = existsSync(chromeBidiOnlyFilePath)
   ? JSON.parse(readFileSync(chromeBidiOnlyFilePath, 'utf-8'))
   : defaultStats;
 
+const chromeCdpFilePath = `./data/chrome-cdp-${timestamp}.json`;
+const latestChromeCdpTests = existsSync(chromeCdpFilePath)
+  ? JSON.parse(readFileSync(chromeCdpFilePath, 'utf-8'))
+  : defaultStats;
+
 writeFileSync(
   'firefox-failing.json',
   JSON.stringify(
@@ -172,6 +177,18 @@ writeFileSync(
 );
 
 writeFileSync(
+  'chrome-cdp-failing.json',
+  JSON.stringify(
+    {
+      failing: latestChromeCdpTests.failures.map((t) => t.fullTitle),
+      pending: latestChromeCdpTests.pending.map((t) => t.fullTitle),
+    },
+    null,
+    2,
+  ),
+);
+
+writeFileSync(
   'firefox-failing-all.json',
   JSON.stringify(
     {
@@ -194,12 +211,25 @@ writeFileSync(
     2,
   ),
 );
+
 writeFileSync(
   'chromeBidiOnly-failing-all.json',
   JSON.stringify(
     {
       failing: latestChromeBidiOnlyTests.failures.map((t) => t.fullTitle),
       pending: latestChromeBidiOnlyTests.pending.map((t) => t.fullTitle),
+    },
+    null,
+    2,
+  ),
+);
+
+writeFileSync(
+  'chrome-cdp-failing-all.json',
+  JSON.stringify(
+    {
+      failing: latestChromeCdpTests.failures.map((t) => t.fullTitle),
+      pending: latestChromeCdpTests.pending.map((t) => t.fullTitle),
     },
     null,
     2,

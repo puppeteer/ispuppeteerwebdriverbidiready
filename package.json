@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "data": "node preprocess-data.mjs && node firefox-delta.mjs",
-    "build": "rm -rf dist && mkdir -p dist && npm run data && node build.mjs && cp data*.json dist/ && cp firefox-failing*.json dist/ && cp chrome-failing*.json dist/ && cp chromeBidiOnly-failing*.json dist/ && cp index.html dist/ && cp main.mjs dist/",
+    "build": "rm -rf dist && mkdir -p dist && npm run data && node build.mjs && cp data*.json dist/ && cp firefox-failing*.json dist/ && cp chrome-failing*.json dist/ && cp chromeBidiOnly-failing*.json dist/ && cp chrome-cdp-failing*.json dist/ && cp index.html dist/ && cp main.mjs dist/",
     "start": "http-server --port 9001 .",
     "prettier": "prettier --write ."
   },

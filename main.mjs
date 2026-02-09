@@ -19,6 +19,7 @@ function formatDate(date) {
 }
 
 function buildTooltip(label, counts) {
+  if (!counts || typeof counts.total !== 'number') return '';
   return `
     <div style="padding: 10px; font-size: 18px;">
       <h3 style="margin: 0;">${label}</h3>
@@ -43,11 +44,12 @@ async function createMainChart(showAllTests = false) {
   let prev = [];
 
   for (const entry of entries.reverse()) {
-    const { date, firefoxCounts, chromeCounts, chromeBidiOnlyCounts } = entry;
+    const { date, firefoxCounts, chromeCounts, chromeBidiOnlyCounts, chromeCdpCounts } = entry;
     if (
       prev[0] === chromeCounts.passing &&
       prev[1] === firefoxCounts.passing &&
-      prev[2] === chromeBidiOnlyCounts.passing
+      prev[2] === chromeBidiOnlyCounts.passing &&
+      prev[3] === chromeCdpCounts?.passing
     ) {
       continue;
     }
@@ -55,6 +57,7 @@ async function createMainChart(showAllTests = false) {
       chromeCounts.passing,
       firefoxCounts.passing,
       chromeBidiOnlyCounts.passing,
+      chromeCdpCounts?.passing,
     ];
 
     chartData.push([
@@ -62,18 +65,24 @@ async function createMainChart(showAllTests = false) {
       (firefoxCounts.passing / firefoxCounts.total) * 100,
       (chromeCounts.passing / chromeCounts.total) * 100,
       (chromeBidiOnlyCounts.passing / chromeBidiOnlyCounts.total) * 100,
+      chromeCdpCounts?.total ? (chromeCdpCounts.passing / chromeCdpCounts.total) * 100 : null,
+
       buildTooltip(
         'Firefox ' + new Date(date).toLocaleDateString(),
         firefoxCounts,
       ),
       buildTooltip(
-        'Chrome ' + new Date(date).toLocaleDateString(),
+        'Chrome BiDi ' + new Date(date).toLocaleDateString(),
         chromeCounts,
       ),
       buildTooltip(
         'Chrome BiDi only ' + new Date(date).toLocaleDateString(),
         chromeBidiOnlyCounts,
       ),
+      buildTooltip(
+        'Chrome CDP ' + new Date(date).toLocaleDateString(),
+        chromeCdpCounts,
+      )
     ]);
     if (new Date(date) < startDate) {
       break;
@@ -121,7 +130,7 @@ async function createMainChart(showAllTests = false) {
 
     // `chartData` contains date, then percentage for each dataset, then
     // tooltip per each dataset.
-    const tooltipOffset = (chartData[0].length - 1) / 2 + 1;
+    const tooltipOffset = Math.floor((chartData[0].length - 1) / 2) + 1;
 
     // Set Text
     if (tooltip.body) {
@@ -167,6 +176,11 @@ async function createMainChart(showAllTests = false) {
           data: chartData.map((item) => item[3]),
           borderWidth: 1,
         },
+        {
+          label: '% tests passed (Chrome CDP)',
+          data: chartData.map((item) => item[4]),
+          borderWidth: 1,
+        }
       ],
     },
     options: {
@@ -253,6 +267,22 @@ async function main() {
     });
   document.querySelector('#chromeBidiOnly-failing').textContent =
     chromeBidiOnlyFailing.failing.length + chromeBidiOnlyFailing.pending.length;
+
+  const chromeCdpFailingEl = document.querySelector('#chrome-cdp-failing');
+  if (chromeCdpFailingEl) {
+    const chromeCdpFailing = await fetch(
+      allTests ? './chrome-cdp-failing-all.json' : './chrome-cdp-failing.json',
+    )
+      .then((res) => res.json())
+      .catch(() => {
+        return {
+          failing: [],
+          pending: [],
+        };
+      });
+    chromeCdpFailingEl.textContent =
+      chromeCdpFailing.failing.length + chromeCdpFailing.pending.length;
+  }
 }
 
 main();

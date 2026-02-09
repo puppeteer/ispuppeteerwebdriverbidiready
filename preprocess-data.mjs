@@ -1,21 +1,31 @@
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 
 function getParts(file) {
-  const parts = file.split('-');
+  let browser = 'firefox';
+  let timestamp = file.replace('.json', '');
+
+  const parts = file.replace('.json', '').split('-');
   if (parts.length === 1) {
-    parts.unshift('firefox');
+    timestamp = parts[0];
+  } else if (parts.length === 2) {
+    browser = parts[0];
+    timestamp = parts[1];
+  } else if (parts.length >= 3) {
+    browser = parts.slice(0, -1).join('-');
+    timestamp = parts[parts.length - 1];
   }
-  parts[1] = parts[1].split('.').shift();
-  return parts;
+
+  return [browser, timestamp];
 }
 
-function mapData(filter) {
+function mapData(filterFnFactory) {
   const files = readdirSync('./data');
   const data = files
-    .filter((file) => file.endsWith('.json') && !file.includes('cdp'))
+    .filter((file) => file.endsWith('.json'))
     .sort()
     .map((file) => {
       const [browser, timestamp] = getParts(file);
+      const isCdpBrowser = browser.includes('cdp');
       let { pending, passes, failures, stats } = JSON.parse(
         readFileSync(`./data/${file}`, 'utf-8'),
       );
@@ -28,6 +38,8 @@ function mapData(filter) {
         skipping: stats.pending,
         total: stats.tests,
       };
+      
+      const filter = filterFnFactory ? filterFnFactory(browser) : null;
       if (filter) {
         passes = passes.filter(filter);
         failures = failures.filter(filter);
@@ -64,7 +76,6 @@ function mapData(filter) {
         failing: 0,
         skipping: 0,
         total: 0,
-        unsupported: 0,
       },
       chromeBidiOnlyCounts: groupByDate
         .get(date)
@@ -73,7 +84,6 @@ function mapData(filter) {
         failing: 0,
         skipping: 0,
         total: 0,
-        unsupported: 0,
       },
       firefoxCounts: groupByDate
         .get(date)
@@ -82,15 +92,29 @@ function mapData(filter) {
         failing: 0,
         skipping: 0,
         total: 0,
-        unsupported: 0,
       },
-      // TODO: extend the object here for more browsers.
+      firefoxCdpCounts: groupByDate
+        .get(date)
+        .find((item) => item.browser === 'firefox-cdp')?.counts || {
+        passing: 0,
+        failing: 0,
+        skipping: 0,
+        total: 0,
+      },
+      chromeCdpCounts: groupByDate
+        .get(date)
+        .find((item) => item.browser === 'chrome-cdp')?.counts || null,
     });
   }
   return mappedData;
 }
 
-const filterIgnored = (result) => !result.file?.includes('/cdp/');
-writeFileSync('data.json', JSON.stringify(mapData(filterIgnored), null, 2));
-writeFileSync('data-all.json', JSON.stringify(mapData(), null, 2));
-// console.log(mappedData);
+const filterIgnoredFactory = (browser) => {
+  if (browser.includes('cdp')) {
+     return (result) => true;
+  }
+  return (result) => !result.file?.includes('/cdp/');
+};
+
+writeFileSync('data.json', JSON.stringify(mapData(filterIgnoredFactory), null, 2));
+writeFileSync('data-all.json', JSON.stringify(mapData(null), null, 2));
