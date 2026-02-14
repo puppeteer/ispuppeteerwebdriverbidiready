@@ -1,0 +1,31 @@
+{
+  "failing": [
+    "Drag n' Drop should drag and drop",
+    "Evaluation specs Page.evaluate should transfer RegEx",
+    "Evaluation specs Page.evaluate should replace symbols with undefined",
+    "Evaluation specs Page.evaluate should return RegEx",
+    "Evaluation specs Page.evaluate should work for circular object",
+    "Evaluation specs Page.evaluate should return properly serialize objects with unknown type fields",
+    "JSHandle JSHandle.jsonValue should work with dates",
+    "JSHandle JSHandle.jsonValue should not throw for circular objects",
+    "JSHandle JSHandle.toString should work with window subtypes",
+    "Keyboard ElementHandle.press should not support |text| option",
+    "Mouse should not throw if buttons are pressed twice",
+    "navigation Page.goto should work when navigating to a URL with a client redirect",
+    "request interception Page.setRequestInterception should work with keep alive redirects",
+    "Screenshots Page.screenshot should get screenshot bigger than the viewport"
+  ],
+  "pending": [
+    "Prerender can screencast",
+    "Screencasts Page.screencast should work",
+    "Screencasts Page.screencast should work concurrently",
+    "Screencasts Page.screencast should validate options",
+    "Page.click should click the button with fixed position inside an iframe",
+    "Coverage specs JSCoverage should not hang when there is a debugger statement",
+    "headful tests HEADFUL headless should be able to read cookies written by headful",
+    "Mouse should reset properly",
+    "Page Page.addScriptTag should throw when added with content to the CSP page",
+    "Screenshots Cdp should work in \"fromSurface: false\" mode",
+    "waittask specs Frame.waitForSelector should work when node is added in a shadow root"
+  ]
+}
